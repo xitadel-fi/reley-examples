@@ -1,0 +1,9 @@
+{
+  "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+  "label": "USDC mint",
+  "blobHash": "5bd7b1ce591ed0c762f8a1ca50af938e1b41205482b38f17a171f197f5491858",
+  "clonedAtSlot": {
+    "__bigint": "429573857"
+  },
+  "source": "cloned"
+}

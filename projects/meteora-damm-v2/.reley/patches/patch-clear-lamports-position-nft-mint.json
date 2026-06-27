@@ -1,0 +1,10 @@
+{
+  "id": "patch-clear-lamports-position-nft-mint",
+  "target": "6Y5ajrw8XJoB9mtJzfkWNESrQeNTLSMSx8c35GydcXMg",
+  "op": {
+    "kind": "setLamports",
+    "lamports": "0"
+  },
+  "createdAt": 1782543687276,
+  "enabled": true
+}

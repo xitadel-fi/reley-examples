@@ -1,0 +1,9 @@
+{
+  "address": "D6q6wuQSrifJKZYpR1M8R4YawnLDtDsMmWM1NbBmgJ59",
+  "label": "USDC reserve",
+  "blobHash": "ec2e6e94d5cd89a9492507a432b11e561b75a1d600c5d63df47247194f87f27b",
+  "clonedAtSlot": {
+    "__bigint": "429631565"
+  },
+  "source": "cloned"
+}

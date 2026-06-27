@@ -1,0 +1,11 @@
+{
+  "id": "patch-usdc-reserve-farmDebt",
+  "target": "D6q6wuQSrifJKZYpR1M8R4YawnLDtDsMmWM1NbBmgJ59",
+  "op": {
+    "kind": "setField",
+    "fieldPath": "farmDebt",
+    "valueJson": "\"11111111111111111111111111111111\""
+  },
+  "createdAt": 1782560000000,
+  "enabled": true
+}

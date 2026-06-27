@@ -1,0 +1,11 @@
+{
+  "id": "patch-usdc-reserve-lastupdate-slot",
+  "target": "D6q6wuQSrifJKZYpR1M8R4YawnLDtDsMmWM1NbBmgJ59",
+  "op": {
+    "kind": "setField",
+    "fieldPath": "lastUpdate.slot",
+    "valueJson": "0"
+  },
+  "createdAt": 1782560000000,
+  "enabled": true
+}

@@ -1,0 +1,32 @@
+{
+  "programId": "HFn8GnPADiny6XqUoWE8uRPPxb29ikn4yTuPa9MF2fWJ",
+  "label": "Kamino Scope",
+  "idlId": null,
+  "upgradeAuthority": null,
+  "versions": [
+    {
+      "id": "1ee0e0e0-aaaa-4000-8000-000000000010",
+      "label": "v1",
+      "elfBlobHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "cloned",
+        "slot": {
+          "__bigint": "0"
+        }
+      },
+      "idlId": null,
+      "createdAt": 1782560000000
+    }
+  ],
+  "activeVersionId": "1ee0e0e0-aaaa-4000-8000-000000000010",
+  "elfBlobHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source": {
+    "kind": "cloned",
+    "slot": {
+      "__bigint": "0"
+    }
+  },
+  "clonedAtSlot": {
+    "__bigint": "0"
+  }
+}

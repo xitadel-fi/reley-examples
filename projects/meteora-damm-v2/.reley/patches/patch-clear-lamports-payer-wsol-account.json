@@ -1,0 +1,10 @@
+{
+  "id": "patch-clear-lamports-payer-wsol-account",
+  "target": "7LANG4v38bXbB2QKdFLuo5biaE6cKDQWB3JPKi7hKVGD",
+  "op": {
+    "kind": "setLamports",
+    "lamports": "0"
+  },
+  "createdAt": 1782543687276,
+  "enabled": true
+}

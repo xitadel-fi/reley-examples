@@ -1,0 +1,22 @@
+{
+  "id": "dddddddd-dddd-4000-8000-000000000001",
+  "name": "Metaplex bootstrap",
+  "description": "Prime the sandbox: fund a payer and advance the clock. Re-run after a sandbox reset to get back to a working baseline for Metaplex.",
+  "steps": [
+    {
+      "kind": "airdrop",
+      "id": "dddddddd-dddd-4000-8000-000000000002",
+      "name": "Airdrop 10 SOL to test payer",
+      "pubkey": "9eyXs1iDMHs1HVbtNMyiCfwoxJyrG3KQuRttjL5cUmgT",
+      "lamports": "10000000000"
+    },
+    {
+      "kind": "warpTime",
+      "id": "dddddddd-dddd-4000-8000-000000000003",
+      "name": "Advance clock 1 hour",
+      "seconds": 3600
+    }
+  ],
+  "createdAt": 1782560000000,
+  "updatedAt": 1782560000000
+}

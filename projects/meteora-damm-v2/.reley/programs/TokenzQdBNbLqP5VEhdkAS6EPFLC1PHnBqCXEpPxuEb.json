@@ -1,0 +1,32 @@
+{
+  "programId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+  "label": "Token-2022",
+  "idlId": null,
+  "upgradeAuthority": null,
+  "versions": [
+    {
+      "id": "b6d55c09-1568-42b2-9d7d-875814cf65a2",
+      "label": "v1",
+      "elfBlobHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "cloned",
+        "slot": {
+          "__bigint": "0"
+        }
+      },
+      "idlId": null,
+      "createdAt": 1782455573695
+    }
+  ],
+  "activeVersionId": "b6d55c09-1568-42b2-9d7d-875814cf65a2",
+  "elfBlobHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source": {
+    "kind": "cloned",
+    "slot": {
+      "__bigint": "0"
+    }
+  },
+  "clonedAtSlot": {
+    "__bigint": "0"
+  }
+}

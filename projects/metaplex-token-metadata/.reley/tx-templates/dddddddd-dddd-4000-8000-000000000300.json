@@ -1,0 +1,55 @@
+{
+  "id": "dddddddd-dddd-4000-8000-000000000300",
+  "name": "CreateMetadataAccountV3 — demo NFT",
+  "description": "Single-instruction template for attaching Metaplex metadata to an existing SPL mint. Pre-wired for the bundled NFT mint keypair; assumes the mint has already been initialized.",
+  "ixs": [
+    {
+      "programId": "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s",
+      "programLabel": "Metaplex Token Metadata",
+      "instructionName": "CreateMetadataAccountV3",
+      "summary": "name=Reley Demo NFT, symbol=RELEY, 1 creator (payer 100%)",
+      "accounts": [
+        {
+          "pubkey": "D1QxvCxbeHRk2phEEH2yTs8K1dcxUg5RAv5mhcWBL6aX",
+          "isSigner": false,
+          "isWritable": true
+        },
+        {
+          "pubkey": "VyH8HKwXvp5DP7oHPzUdGDzVxWA1Ca8b4SPkpbbAzW9",
+          "isSigner": false,
+          "isWritable": false
+        },
+        {
+          "pubkey": "7wbZJYc8Fe5C5Mn1FuRBYdJpns6WCXVtZ3Yimvu4Arm7",
+          "isSigner": true,
+          "isWritable": false
+        },
+        {
+          "pubkey": "7wbZJYc8Fe5C5Mn1FuRBYdJpns6WCXVtZ3Yimvu4Arm7",
+          "isSigner": true,
+          "isWritable": true
+        },
+        {
+          "pubkey": "7wbZJYc8Fe5C5Mn1FuRBYdJpns6WCXVtZ3Yimvu4Arm7",
+          "isSigner": false,
+          "isWritable": false
+        },
+        {
+          "pubkey": "11111111111111111111111111111111",
+          "isSigner": false,
+          "isWritable": false
+        },
+        {
+          "pubkey": "SysvarRent111111111111111111111111111111111",
+          "isSigner": false,
+          "isWritable": false
+        }
+      ],
+      "dataBase64": "IQ4AAABSZWxleSBEZW1vIE5GVAUAAABSRUxFWS4AAABodHRwczovL3JlbGV5Lnh5ei9jb21tdW5pdHkvbWV0YXBsZXgtZGVtby5qc29uAAABAQAAAGcijxRbeORjUi1YRv8TwIU0z3XIwjesGaE8FbkpQAU6AWQAAAEA"
+    }
+  ],
+  "computeUnitLimit": null,
+  "airdropLamports": "2000000000",
+  "createdAt": 1782560000000,
+  "updatedAt": 1782560000000
+}

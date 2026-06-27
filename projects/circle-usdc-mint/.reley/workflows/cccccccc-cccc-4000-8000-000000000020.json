@@ -1,0 +1,101 @@
+{
+  "id": "cccccccc-cccc-4000-8000-000000000020",
+  "name": "Mint 1000 USDC to test payer",
+  "description": "Real business flow: airdrop SOL → create payer USDC ATA → mint 1000 USDC. Relies on the project-scoped patch overriding the on-chain USDC mint authority to the bundled test-payer keypair so the sandbox can act as Circle.",
+  "steps": [
+    {
+      "kind": "airdrop",
+      "id": "cccccccc-cccc-4000-8000-000000000021",
+      "name": "Airdrop 2 SOL to test payer",
+      "pubkey": "8f8Hj9A4mnthbVXYxQXTMadbgYeub17pvDp5qYuKj8rj",
+      "lamports": "2000000000"
+    },
+    {
+      "kind": "tx",
+      "id": "cccccccc-cccc-4000-8000-000000000022",
+      "name": "Create payer USDC ATA",
+      "ixs": [
+        {
+          "programId": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+          "programLabel": "Associated Token Account",
+          "instructionName": "CreateIdempotent",
+          "summary": "ATA(owner=payer, mint=USDC)",
+          "accounts": [
+            {
+              "pubkey": "8f8Hj9A4mnthbVXYxQXTMadbgYeub17pvDp5qYuKj8rj",
+              "isSigner": true,
+              "isWritable": true
+            },
+            {
+              "pubkey": "2uVyffSyxmsZJR3UM7sRTMvqwodgH2CnJUDeAg2tfmng",
+              "isSigner": false,
+              "isWritable": true
+            },
+            {
+              "pubkey": "8f8Hj9A4mnthbVXYxQXTMadbgYeub17pvDp5qYuKj8rj",
+              "isSigner": false,
+              "isWritable": false
+            },
+            {
+              "pubkey": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "isSigner": false,
+              "isWritable": false
+            },
+            {
+              "pubkey": "11111111111111111111111111111111",
+              "isSigner": false,
+              "isWritable": false
+            },
+            {
+              "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "isSigner": false,
+              "isWritable": false
+            }
+          ],
+          "dataBase64": "AQ=="
+        }
+      ],
+      "computeUnitLimit": null,
+      "airdropPayerLamports": null,
+      "payerKeypairId": "cccccccc-cccc-4000-8000-000000000100",
+      "additionalSignerKeypairIds": []
+    },
+    {
+      "kind": "tx",
+      "id": "cccccccc-cccc-4000-8000-000000000023",
+      "name": "Mint 1000 USDC",
+      "ixs": [
+        {
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "programLabel": "SPL Token",
+          "instructionName": "MintTo",
+          "summary": "1000 USDC → payer ATA",
+          "accounts": [
+            {
+              "pubkey": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "isSigner": false,
+              "isWritable": true
+            },
+            {
+              "pubkey": "2uVyffSyxmsZJR3UM7sRTMvqwodgH2CnJUDeAg2tfmng",
+              "isSigner": false,
+              "isWritable": true
+            },
+            {
+              "pubkey": "8f8Hj9A4mnthbVXYxQXTMadbgYeub17pvDp5qYuKj8rj",
+              "isSigner": true,
+              "isWritable": false
+            }
+          ],
+          "dataBase64": "BwDKmjsAAAAA"
+        }
+      ],
+      "computeUnitLimit": null,
+      "airdropPayerLamports": null,
+      "payerKeypairId": "cccccccc-cccc-4000-8000-000000000100",
+      "additionalSignerKeypairIds": []
+    }
+  ],
+  "createdAt": 1782560000000,
+  "updatedAt": 1782560000000
+}

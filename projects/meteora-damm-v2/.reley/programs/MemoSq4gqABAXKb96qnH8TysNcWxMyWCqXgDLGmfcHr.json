@@ -1,0 +1,32 @@
+{
+  "programId": "MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr",
+  "label": "Memo v2",
+  "idlId": null,
+  "upgradeAuthority": null,
+  "versions": [
+    {
+      "id": "76a21627-24e6-4489-8ec7-1fae3566a403",
+      "label": "v1",
+      "elfBlobHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "cloned",
+        "slot": {
+          "__bigint": "0"
+        }
+      },
+      "idlId": null,
+      "createdAt": 1782455573695
+    }
+  ],
+  "activeVersionId": "76a21627-24e6-4489-8ec7-1fae3566a403",
+  "elfBlobHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source": {
+    "kind": "cloned",
+    "slot": {
+      "__bigint": "0"
+    }
+  },
+  "clonedAtSlot": {
+    "__bigint": "0"
+  }
+}

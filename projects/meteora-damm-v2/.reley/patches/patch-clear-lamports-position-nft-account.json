@@ -1,0 +1,10 @@
+{
+  "id": "patch-clear-lamports-position-nft-account",
+  "target": "EgHSpu2upiDMkNCXKRGE1qirmHmszjK9Nm8duMDjqx56",
+  "op": {
+    "kind": "setLamports",
+    "lamports": "0"
+  },
+  "createdAt": 1782543687276,
+  "enabled": true
+}

@@ -1,0 +1,10 @@
+{
+  "id": "patch-clear-lamports-position",
+  "target": "668z91KuCvW7gA9MWkoLntsYRe9beW6o5Diy3uHWuNw",
+  "op": {
+    "kind": "setLamports",
+    "lamports": "0"
+  },
+  "createdAt": 1782543687276,
+  "enabled": true
+}

@@ -1,0 +1,11 @@
+{
+  "id": "patch-sol-reserve-lastupdate-slot",
+  "target": "d4A2prbA2whesmvHaL88BH6Ewn5N4bTSU2Ze8P6Bc4Q",
+  "op": {
+    "kind": "setField",
+    "fieldPath": "lastUpdate.slot",
+    "valueJson": "0"
+  },
+  "createdAt": 1782560000000,
+  "enabled": true
+}

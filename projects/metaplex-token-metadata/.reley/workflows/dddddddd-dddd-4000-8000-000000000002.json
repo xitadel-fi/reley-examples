@@ -1,0 +1,213 @@
+{
+  "id": "dddddddd-dddd-4000-8000-000000000002",
+  "name": "Mint a Metaplex NFT",
+  "description": "Real NFT mint: 0-decimal SPL Token + Metaplex metadata (V3, 1 verified creator). Master edition step intentionally omitted — CreateMasterEditionV3 returns 0xcb in the LiteSVM-cloned program (likely a sub-CPI quirk in the SetAuthority transfer for freeze auth). Output is a valid metadata-attached NFT; add the master edition manually on real chain via `mpl-token-metadata` if needed.",
+  "steps": [
+    {
+      "kind": "airdrop",
+      "id": "dddddddd-dddd-4000-8000-000000000003",
+      "name": "Airdrop 2 SOL to payer",
+      "pubkey": "7wbZJYc8Fe5C5Mn1FuRBYdJpns6WCXVtZ3Yimvu4Arm7",
+      "lamports": "2000000000"
+    },
+    {
+      "kind": "tx",
+      "id": "dddddddd-dddd-4000-8000-000000000004",
+      "name": "Create mint account (System CreateAccount)",
+      "ixs": [
+        {
+          "programId": "11111111111111111111111111111111",
+          "programLabel": "System",
+          "instructionName": "CreateAccount",
+          "summary": "payer → mint (82 bytes, owner=SPL Token)",
+          "accounts": [
+            {
+              "pubkey": "7wbZJYc8Fe5C5Mn1FuRBYdJpns6WCXVtZ3Yimvu4Arm7",
+              "isSigner": true,
+              "isWritable": true
+            },
+            {
+              "pubkey": "VyH8HKwXvp5DP7oHPzUdGDzVxWA1Ca8b4SPkpbbAzW9",
+              "isSigner": true,
+              "isWritable": true
+            }
+          ],
+          "dataBase64": "AAAAAGBNFgAAAAAAUgAAAAAAAAAG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqQ=="
+        }
+      ],
+      "computeUnitLimit": null,
+      "airdropPayerLamports": null,
+      "payerKeypairId": "aaaaaaaa-1111-4000-8000-000000000001",
+      "additionalSignerKeypairIds": [
+        "aaaaaaaa-1111-4000-8000-000000000002"
+      ]
+    },
+    {
+      "kind": "tx",
+      "id": "dddddddd-dddd-4000-8000-000000000005",
+      "name": "Initialize mint (decimals=0)",
+      "ixs": [
+        {
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "programLabel": "SPL Token",
+          "instructionName": "InitializeMint2",
+          "summary": "decimals=0, mintAuthority=payer, freezeAuthority=payer",
+          "accounts": [
+            {
+              "pubkey": "VyH8HKwXvp5DP7oHPzUdGDzVxWA1Ca8b4SPkpbbAzW9",
+              "isSigner": false,
+              "isWritable": true
+            }
+          ],
+          "dataBase64": "FABnIo8UW3jkY1ItWEb/E8CFNM91yMI3rBmhPBW5KUAFOgFnIo8UW3jkY1ItWEb/E8CFNM91yMI3rBmhPBW5KUAFOg=="
+        }
+      ],
+      "computeUnitLimit": null,
+      "airdropPayerLamports": null,
+      "payerKeypairId": "aaaaaaaa-1111-4000-8000-000000000001",
+      "additionalSignerKeypairIds": []
+    },
+    {
+      "kind": "tx",
+      "id": "dddddddd-dddd-4000-8000-000000000006",
+      "name": "Create ATA for payer",
+      "ixs": [
+        {
+          "programId": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+          "programLabel": "Associated Token Account",
+          "instructionName": "CreateIdempotent",
+          "summary": "ATA(owner=payer, mint=mint)",
+          "accounts": [
+            {
+              "pubkey": "7wbZJYc8Fe5C5Mn1FuRBYdJpns6WCXVtZ3Yimvu4Arm7",
+              "isSigner": true,
+              "isWritable": true
+            },
+            {
+              "pubkey": "E2FjzV2MybXRYTHvtQSLntqXXseuy946vsgST6cZFkjK",
+              "isSigner": false,
+              "isWritable": true
+            },
+            {
+              "pubkey": "7wbZJYc8Fe5C5Mn1FuRBYdJpns6WCXVtZ3Yimvu4Arm7",
+              "isSigner": false,
+              "isWritable": false
+            },
+            {
+              "pubkey": "VyH8HKwXvp5DP7oHPzUdGDzVxWA1Ca8b4SPkpbbAzW9",
+              "isSigner": false,
+              "isWritable": false
+            },
+            {
+              "pubkey": "11111111111111111111111111111111",
+              "isSigner": false,
+              "isWritable": false
+            },
+            {
+              "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "isSigner": false,
+              "isWritable": false
+            }
+          ],
+          "dataBase64": "AQ=="
+        }
+      ],
+      "computeUnitLimit": null,
+      "airdropPayerLamports": null,
+      "payerKeypairId": "aaaaaaaa-1111-4000-8000-000000000001",
+      "additionalSignerKeypairIds": []
+    },
+    {
+      "kind": "tx",
+      "id": "dddddddd-dddd-4000-8000-000000000007",
+      "name": "Mint 1 token to payer ATA",
+      "ixs": [
+        {
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "programLabel": "SPL Token",
+          "instructionName": "MintTo",
+          "summary": "amount=1",
+          "accounts": [
+            {
+              "pubkey": "VyH8HKwXvp5DP7oHPzUdGDzVxWA1Ca8b4SPkpbbAzW9",
+              "isSigner": false,
+              "isWritable": true
+            },
+            {
+              "pubkey": "E2FjzV2MybXRYTHvtQSLntqXXseuy946vsgST6cZFkjK",
+              "isSigner": false,
+              "isWritable": true
+            },
+            {
+              "pubkey": "7wbZJYc8Fe5C5Mn1FuRBYdJpns6WCXVtZ3Yimvu4Arm7",
+              "isSigner": true,
+              "isWritable": false
+            }
+          ],
+          "dataBase64": "BwEAAAAAAAAA"
+        }
+      ],
+      "computeUnitLimit": null,
+      "airdropPayerLamports": null,
+      "payerKeypairId": "aaaaaaaa-1111-4000-8000-000000000001",
+      "additionalSignerKeypairIds": []
+    },
+    {
+      "kind": "tx",
+      "id": "dddddddd-dddd-4000-8000-000000000008",
+      "name": "Create Metadata account (V3)",
+      "ixs": [
+        {
+          "programId": "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s",
+          "programLabel": "Metaplex Token Metadata",
+          "instructionName": "CreateMetadataAccountV3",
+          "summary": "name=Reley Demo NFT, symbol=RELEY, 1 creator (payer 100%)",
+          "accounts": [
+            {
+              "pubkey": "D1QxvCxbeHRk2phEEH2yTs8K1dcxUg5RAv5mhcWBL6aX",
+              "isSigner": false,
+              "isWritable": true
+            },
+            {
+              "pubkey": "VyH8HKwXvp5DP7oHPzUdGDzVxWA1Ca8b4SPkpbbAzW9",
+              "isSigner": false,
+              "isWritable": false
+            },
+            {
+              "pubkey": "7wbZJYc8Fe5C5Mn1FuRBYdJpns6WCXVtZ3Yimvu4Arm7",
+              "isSigner": true,
+              "isWritable": false
+            },
+            {
+              "pubkey": "7wbZJYc8Fe5C5Mn1FuRBYdJpns6WCXVtZ3Yimvu4Arm7",
+              "isSigner": true,
+              "isWritable": true
+            },
+            {
+              "pubkey": "7wbZJYc8Fe5C5Mn1FuRBYdJpns6WCXVtZ3Yimvu4Arm7",
+              "isSigner": false,
+              "isWritable": false
+            },
+            {
+              "pubkey": "11111111111111111111111111111111",
+              "isSigner": false,
+              "isWritable": false
+            },
+            {
+              "pubkey": "SysvarRent111111111111111111111111111111111",
+              "isSigner": false,
+              "isWritable": false
+            }
+          ],
+          "dataBase64": "IQ4AAABSZWxleSBEZW1vIE5GVAUAAABSRUxFWS4AAABodHRwczovL3JlbGV5Lnh5ei9jb21tdW5pdHkvbWV0YXBsZXgtZGVtby5qc29uAAABAQAAAGcijxRbeORjUi1YRv8TwIU0z3XIwjesGaE8FbkpQAU6AWQAAAEA"
+        }
+      ],
+      "computeUnitLimit": null,
+      "airdropPayerLamports": null,
+      "payerKeypairId": "aaaaaaaa-1111-4000-8000-000000000001",
+      "additionalSignerKeypairIds": []
+    }
+  ],
+  "createdAt": 1782560000000,
+  "updatedAt": 1782560000000
+}

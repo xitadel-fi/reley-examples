@@ -1,0 +1,11 @@
+{
+  "id": "patch-usdc-reserve-maxage-price",
+  "target": "D6q6wuQSrifJKZYpR1M8R4YawnLDtDsMmWM1NbBmgJ59",
+  "op": {
+    "kind": "setField",
+    "fieldPath": "config.tokenInfo.maxAgePriceSeconds",
+    "valueJson": "31536000"
+  },
+  "createdAt": 1782560000000,
+  "enabled": true
+}

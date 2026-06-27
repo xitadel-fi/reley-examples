@@ -1,0 +1,11 @@
+{
+  "id": "patch-sol-reserve-maxage-price",
+  "target": "d4A2prbA2whesmvHaL88BH6Ewn5N4bTSU2Ze8P6Bc4Q",
+  "op": {
+    "kind": "setField",
+    "fieldPath": "config.tokenInfo.maxAgePriceSeconds",
+    "valueJson": "31536000"
+  },
+  "createdAt": 1782560000000,
+  "enabled": true
+}

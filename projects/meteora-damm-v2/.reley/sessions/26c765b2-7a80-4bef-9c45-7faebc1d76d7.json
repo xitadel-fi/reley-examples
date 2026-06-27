@@ -1,0 +1,125 @@
+{
+  "id": "26c765b2-7a80-4bef-9c45-7faebc1d76d7",
+  "projectId": "51cf10cf-a195-4355-aeaa-ea41858f1f2d",
+  "name": "default",
+  "currentSlot": {
+    "__bigint": "0"
+  },
+  "accounts": {},
+  "sessionPatches": [],
+  "txHistory": [
+    {
+      "id": "1b22840c-bd5a-4cfe-a379-7c88415484f5",
+      "signature": null,
+      "submittedAt": 1782755773223,
+      "success": true,
+      "errorMessage": null,
+      "cuConsumed": {
+        "__bigint": "15996"
+      },
+      "trace": {
+        "programId": "ComputeBudget111111111111111111111111111111",
+        "depth": 1,
+        "instructionIndex": 0,
+        "cuConsumed": {
+          "__bigint": "0"
+        },
+        "cuRemaining": {
+          "__bigint": "0"
+        },
+        "logs": [
+          {
+            "raw": "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "level": "invoke"
+          },
+          {
+            "raw": "Program ComputeBudget111111111111111111111111111111 success",
+            "level": "success"
+          }
+        ],
+        "events": [],
+        "returnData": null,
+        "children": [],
+        "error": null
+      },
+      "touchedAccounts": [],
+      "rawTxBase64": "Azow3Ibty4UbPnBucmlu+EDIqh/cVrTYdqPvyyW6cKErNj+OSMJ4h7nqS0HtSvd0ZIJs9VgZ8UWWHRLK55PU0QkGb+absoM191dEL95br4gxBmzvkAq/oLe/6laNXvkGRBv8+nML60BmyeQaOysCj+lAPPCnsuIHzgr332SGPYkA0TrgeOU6NsFwvBmlpSi0xm64grijtBWBMhqrywJjVosyDnP40f066bN24gjg6ipuTk7bdIawH0EVJEsJANytDoADAAUJ6L3t4cGq/qYIO5n2mLxc3i0XkKiSOgplVNCHFbsSBqBisSwhk7YBr7wUWDK/7J7bUo1Y4H+0XTWwzY2wDZg7SV4Ov2qWMNpvg2PoSQVH3HWnDV2hZ6xCXHcTp1fNTWuyxvp6877brTo9ZfNqq8l0MbG75MLS9uDkfKYCA0UvXWEDBkZv5SEXMv/srbpyw5vnvIzlu8X3EmssQ5s6QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKkGp9UXGSxcUSGMyUw9SvF/WNruCJuh/UTj29mKAAAAAAabiFf+q4GE+2h/Y0YYwDXaxDncGus7VZig8AAAAAABMqcqgEP0zlyWKZSuE301Cgv/MDLpcZ4pI2OMvGq/zJ8HBAAFAkANAwAFAgABNAAAAADwHR8AAAAAAKUAAAAAAAAABt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKkGBAEDAAcBAQYDAwEACQeAAFliAAAAAAUCAAI0AAAAAPDLxY8CAAAApQAAAAAAAAAG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqQYEAggABwEBBgECAREA"
+    },
+    {
+      "id": "cf2b7689-9511-4a67-8c3b-85b17e0caf3a",
+      "signature": null,
+      "submittedAt": 1782755773229,
+      "success": true,
+      "errorMessage": null,
+      "cuConsumed": {
+        "__bigint": "129546"
+      },
+      "trace": {
+        "programId": "ComputeBudget111111111111111111111111111111",
+        "depth": 1,
+        "instructionIndex": 0,
+        "cuConsumed": {
+          "__bigint": "0"
+        },
+        "cuRemaining": {
+          "__bigint": "0"
+        },
+        "logs": [
+          {
+            "raw": "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "level": "invoke"
+          },
+          {
+            "raw": "Program ComputeBudget111111111111111111111111111111 success",
+            "level": "success"
+          }
+        ],
+        "events": [],
+        "returnData": null,
+        "children": [],
+        "error": null
+      },
+      "touchedAccounts": [],
+      "rawTxBase64": "Ai2zLP4zOvR6trF8YlC1W31jCSrVaZkRYc1Mf4Xkk0/yqhrpz17XiDGTzPmXRqQdke+o9ObfPm0sZ93EY0E0bgUdjkp4t7SBL7bGDpmLO3yaY0R+Qoin1eZ2HyxdniVv8WKuLgiXXmQKtCiBWD6WSe1kQC1jlV91/k0CHYVXt8kDgAIACRLove3hwar+pgg7mfaYvFzeLReQqJI6CmVU0IcVuxIGoFJAnsmztu/dbRG6QGMw+gA1DNhAYdSz5wpIVL/dao9fyzgtI6vQ2KpIQbh/5PeqFHYP9vtH9+sknIc+PLjbdEnrqCt1JMlcTqDyb4pWruCsU0pxj3Ta2YdHoXYnKO9o7AFNtpZsmzAU3W3s3tPSKvjL/TLRaD6CvCjjo1lmgkXQfnHlpt1fy/DrQT3CXwFB5Mec1UCWoUeJNBvZaidP2nw+l/xaB+qvxJxmO+dmU1+Bt72KMglGeC5Fm2p7aDh9v2KxLCGTtgGvvBRYMr/snttSjVjgf7RdNbDNjbANmDtJXg6/apYw2m+DY+hJBUfcdacNXaFnrEJcdxOnV81Na7IDBkZv5SEXMv/srbpyw5vnvIzlu8X3EmssQ5s6QAAAAAktITVlehWcK4fUtmpw246XUjif92qvIGztBjo4+Vrt8szVNayl8XNqyCLdB3Pk2S+9ilmylANQApWpARxzqeXG+nrzvtutOj1l82qryXQxsbvkwtL24OR8pgIDRS9dYQabiFf+q4GE+2h/Y0YYwDXaxDncGus7VZig8AAAAAABBt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKkG3fbh7nWP3hhCXbzkbM3athr8TYO5DSf+vfko2KGL/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKnbns0RkChz8WUyLytCgkQEcrH3RVr+DqDP7Igjrd60kxUUbVrnFMJfkejIK/TJKJ370T8iWLh548EJ1N56MPAIJAAUCgBoGAAoTAAECAAsDBAwNBQYHCA4ODxARCmsUofEYvd20AqAlJgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQOwEAAQAAAAAAAAAAAAAAm1dpTqkaXISxxP7/AAAAAAB7YiOv4kUZNTIJ2eYAAAAAHySSRnE5/ZQCAAAAAAAAAAAAAAA="
+    },
+    {
+      "id": "92691baa-0bae-47ca-85dd-13b3cb2a7ce0",
+      "signature": null,
+      "submittedAt": 1782755773231,
+      "success": false,
+      "errorMessage": "TransactionErrorInstructionError { index: 1, error: InstructionErrorCustom { code: 6002 } }",
+      "cuConsumed": {
+        "__bigint": "9118"
+      },
+      "trace": {
+        "programId": "ComputeBudget111111111111111111111111111111",
+        "depth": 1,
+        "instructionIndex": 0,
+        "cuConsumed": {
+          "__bigint": "0"
+        },
+        "cuRemaining": {
+          "__bigint": "0"
+        },
+        "logs": [
+          {
+            "raw": "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+            "level": "invoke"
+          },
+          {
+            "raw": "Program ComputeBudget111111111111111111111111111111 success",
+            "level": "success"
+          }
+        ],
+        "events": [],
+        "returnData": null,
+        "children": [],
+        "error": null
+      },
+      "touchedAccounts": [],
+      "rawTxBase64": "Aam06h8u7JN5A0/ctz3Qxlcl7rLLQUmW7xSdvemlvgUPvYnsuIRx/hE7nxh3jI065hwRSflZw1WFdqRCBm5ORQ+AAQAIDui97eHBqv6mCDuZ9pi8XN4tF5CokjoKZVTQhxW7Egag66grdSTJXE6g8m+KVq7grFNKcY902tmHR6F2JyjvaOxeDr9qljDab4Nj6EkFR9x1pw1doWesQlx3E6dXzU1rsmKxLCGTtgGvvBRYMr/snttSjVjgf7RdNbDNjbANmDtJfnHlpt1fy/DrQT3CXwFB5Mec1UCWoUeJNBvZaidP2nw+l/xaB+qvxJxmO+dmU1+Bt72KMglGeC5Fm2p7aDh9vwMGRm/lIRcy/+ytunLDm+e8jOW7xfcSayxDmzpAAAAACS0hNWV6FZwrh9S2anDbjpdSOJ/3aq8gbO0GOjj5Wu3yzNU1rKXxc2rIIt0Hc+TZL72KWbKUA1AClakBHHOp5cb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hBpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAEG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqSp257NEZAoc/FlMi8rQoJEBHKx90Va/g6gz+yII63etBqfVFxh70WY12tQEVf3CwMEkxo8hVnWl27rLXwgAAAAh59gjgpwravoFFrOkUnKwvukqXkbv787ZvkRQdV/hTQIGAAUCQA0DAAcPCAECAwQFCQoACwsHDAcNGPjGnpHhdYfIAOH1BQAAAAD//////////wA="
+    }
+  ],
+  "snapshots": [],
+  "isDefault": false
+}

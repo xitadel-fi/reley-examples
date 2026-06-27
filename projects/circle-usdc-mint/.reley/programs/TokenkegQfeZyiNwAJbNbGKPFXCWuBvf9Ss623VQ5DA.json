@@ -1,0 +1,32 @@
+{
+  "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+  "label": "SPL Token",
+  "idlId": null,
+  "upgradeAuthority": null,
+  "versions": [
+    {
+      "id": "6b9f5f8d-5278-4182-bf3d-dd12d91b03e2",
+      "label": "v1",
+      "elfBlobHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "cloned",
+        "slot": {
+          "__bigint": "0"
+        }
+      },
+      "idlId": null,
+      "createdAt": 1782560549802
+    }
+  ],
+  "activeVersionId": "6b9f5f8d-5278-4182-bf3d-dd12d91b03e2",
+  "elfBlobHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source": {
+    "kind": "cloned",
+    "slot": {
+      "__bigint": "0"
+    }
+  },
+  "clonedAtSlot": {
+    "__bigint": "0"
+  }
+}

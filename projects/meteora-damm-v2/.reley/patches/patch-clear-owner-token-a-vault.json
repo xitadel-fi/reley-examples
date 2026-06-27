@@ -1,0 +1,10 @@
+{
+  "id": "patch-clear-owner-token-a-vault",
+  "target": "9Wb6s15bfLH2ycbVkKth14W1tGkqrWDUV14u1UTj6De3",
+  "op": {
+    "kind": "setOwner",
+    "owner": "11111111111111111111111111111111"
+  },
+  "createdAt": 1782543687276,
+  "enabled": true
+}

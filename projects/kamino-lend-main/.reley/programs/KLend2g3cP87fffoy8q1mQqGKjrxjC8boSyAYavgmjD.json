@@ -1,0 +1,32 @@
+{
+  "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+  "label": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+  "idlId": null,
+  "upgradeAuthority": "GzFgdRJXmawPhGeBsyRCDLx4jAKPsvbUqoqitzppkzkW",
+  "versions": [
+    {
+      "id": "2bda88b4-dab7-440f-ae62-0c497723da5d",
+      "label": "v1",
+      "elfBlobHash": "739ef4868c884a5c36a814878f337880d1ed9e145faf9223985b158068d0dca5",
+      "source": {
+        "kind": "cloned",
+        "slot": {
+          "__bigint": "429227585"
+        }
+      },
+      "idlId": null,
+      "createdAt": 1782559647483
+    }
+  ],
+  "activeVersionId": "2bda88b4-dab7-440f-ae62-0c497723da5d",
+  "elfBlobHash": "739ef4868c884a5c36a814878f337880d1ed9e145faf9223985b158068d0dca5",
+  "source": {
+    "kind": "cloned",
+    "slot": {
+      "__bigint": "429227585"
+    }
+  },
+  "clonedAtSlot": {
+    "__bigint": "429227585"
+  }
+}

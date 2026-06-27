@@ -1,0 +1,32 @@
+{
+  "programId": "ComputeBudget111111111111111111111111111111",
+  "label": "Compute Budget",
+  "idlId": null,
+  "upgradeAuthority": null,
+  "versions": [
+    {
+      "id": "f0381d33-9852-41e7-b043-c4f0fe17f079",
+      "label": "v1",
+      "elfBlobHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "cloned",
+        "slot": {
+          "__bigint": "0"
+        }
+      },
+      "idlId": null,
+      "createdAt": 1782455573695
+    }
+  ],
+  "activeVersionId": "f0381d33-9852-41e7-b043-c4f0fe17f079",
+  "elfBlobHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source": {
+    "kind": "cloned",
+    "slot": {
+      "__bigint": "0"
+    }
+  },
+  "clonedAtSlot": {
+    "__bigint": "0"
+  }
+}

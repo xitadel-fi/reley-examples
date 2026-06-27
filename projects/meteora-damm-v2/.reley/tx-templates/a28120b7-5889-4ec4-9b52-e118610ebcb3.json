@@ -1,0 +1,153 @@
+{
+  "id": "a28120b7-5889-4ec4-9b52-e118610ebcb3",
+  "name": "setup-balances",
+  "description": "",
+  "ixs": [
+    {
+      "programId": "ComputeBudget111111111111111111111111111111",
+      "programLabel": "Compute Budget",
+      "instructionName": "SetComputeUnitLimit",
+      "summary": "cu=200000",
+      "accounts": [],
+      "dataBase64": "AkANAwA="
+    },
+    {
+      "programId": "11111111111111111111111111111111",
+      "programLabel": "System",
+      "instructionName": "CreateAccount",
+      "summary": "7eFeVxM6…",
+      "accounts": [
+        {
+          "pubkey": "GfXZVggN4SnqW3s8XierYjKh4QSn2cP9g7Xca5UF8vSj",
+          "isSigner": true,
+          "isWritable": true
+        },
+        {
+          "pubkey": "7eFeVxM6JNm6WRJKvxQhG6tqcs4BNzGJGWwMdpukiGHv",
+          "isSigner": true,
+          "isWritable": true
+        }
+      ],
+      "dataBase64": "AAAAAPAdHwAAAAAApQAAAAAAAAAG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqQ=="
+    },
+    {
+      "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "programLabel": "SPL Token",
+      "instructionName": "InitializeAccount",
+      "summary": "4 accounts",
+      "accounts": [
+        {
+          "pubkey": "7eFeVxM6JNm6WRJKvxQhG6tqcs4BNzGJGWwMdpukiGHv",
+          "isSigner": false,
+          "isWritable": true
+        },
+        {
+          "pubkey": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "isSigner": false,
+          "isWritable": false
+        },
+        {
+          "pubkey": "GfXZVggN4SnqW3s8XierYjKh4QSn2cP9g7Xca5UF8vSj",
+          "isSigner": false,
+          "isWritable": false
+        },
+        {
+          "pubkey": "SysvarRent111111111111111111111111111111111",
+          "isSigner": false,
+          "isWritable": false
+        }
+      ],
+      "dataBase64": "AQ=="
+    },
+    {
+      "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "programLabel": "SPL Token",
+      "instructionName": "MintTo",
+      "summary": "amount=1650000000",
+      "accounts": [
+        {
+          "pubkey": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "isSigner": false,
+          "isWritable": true
+        },
+        {
+          "pubkey": "7eFeVxM6JNm6WRJKvxQhG6tqcs4BNzGJGWwMdpukiGHv",
+          "isSigner": false,
+          "isWritable": true
+        },
+        {
+          "pubkey": "GfXZVggN4SnqW3s8XierYjKh4QSn2cP9g7Xca5UF8vSj",
+          "isSigner": true,
+          "isWritable": false
+        }
+      ],
+      "dataBase64": "B4AAWWIAAAAA"
+    },
+    {
+      "programId": "11111111111111111111111111111111",
+      "programLabel": "System",
+      "instructionName": "CreateAccount",
+      "summary": "7LANG4v3…",
+      "accounts": [
+        {
+          "pubkey": "GfXZVggN4SnqW3s8XierYjKh4QSn2cP9g7Xca5UF8vSj",
+          "isSigner": true,
+          "isWritable": true
+        },
+        {
+          "pubkey": "7LANG4v38bXbB2QKdFLuo5biaE6cKDQWB3JPKi7hKVGD",
+          "isSigner": true,
+          "isWritable": true
+        }
+      ],
+      "dataBase64": "AAAAAPDLxY8CAAAApQAAAAAAAAAG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqQ=="
+    },
+    {
+      "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "programLabel": "SPL Token",
+      "instructionName": "InitializeAccount",
+      "summary": "4 accounts",
+      "accounts": [
+        {
+          "pubkey": "7LANG4v38bXbB2QKdFLuo5biaE6cKDQWB3JPKi7hKVGD",
+          "isSigner": false,
+          "isWritable": true
+        },
+        {
+          "pubkey": "So11111111111111111111111111111111111111112",
+          "isSigner": false,
+          "isWritable": false
+        },
+        {
+          "pubkey": "GfXZVggN4SnqW3s8XierYjKh4QSn2cP9g7Xca5UF8vSj",
+          "isSigner": false,
+          "isWritable": false
+        },
+        {
+          "pubkey": "SysvarRent111111111111111111111111111111111",
+          "isSigner": false,
+          "isWritable": false
+        }
+      ],
+      "dataBase64": "AQ=="
+    },
+    {
+      "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "programLabel": "SPL Token",
+      "instructionName": "SyncNative",
+      "summary": "sync wrapped SOL",
+      "accounts": [
+        {
+          "pubkey": "7LANG4v38bXbB2QKdFLuo5biaE6cKDQWB3JPKi7hKVGD",
+          "isSigner": false,
+          "isWritable": true
+        }
+      ],
+      "dataBase64": "EQ=="
+    }
+  ],
+  "computeUnitLimit": null,
+  "airdropLamports": "20000000000",
+  "createdAt": 1782543687276,
+  "updatedAt": 1782543687276
+}

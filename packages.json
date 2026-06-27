@@ -1,0 +1,105 @@
+{
+  "$schema": "https://reley.xyz/community/packages.schema.json",
+  "version": 1,
+  "updatedAt": "2026-06-27T00:00:00Z",
+  "categories": [
+    {
+      "id": "lending",
+      "title": "Lending & Borrow",
+      "description": "Money-market protocols, isolated lending, leverage.",
+      "order": 1
+    },
+    {
+      "id": "dex",
+      "title": "DEX",
+      "description": "AMMs, order books, aggregators.",
+      "order": 2
+    },
+    {
+      "id": "perps",
+      "title": "Perpetuals",
+      "description": "Perp DEXes, on-chain leverage venues.",
+      "order": 3
+    },
+    {
+      "id": "stablecoin",
+      "title": "Stablecoins",
+      "description": "Issuers, redemption, peg-stability.",
+      "order": 4
+    },
+    {
+      "id": "nft",
+      "title": "NFT",
+      "description": "Marketplaces, compressed NFT, launchpads.",
+      "order": 5
+    },
+    {
+      "id": "infra",
+      "title": "Infra & Builtins",
+      "description": "SPL Token, Token-2022, Address Lookup Tables, Memo.",
+      "order": 6
+    }
+  ],
+  "packages": [
+    {
+      "id": "kamino-lend-main",
+      "categoryId": "lending",
+      "title": "Kamino Lend — Main Market",
+      "description": "Real Kamino main-market lend + borrow: program + main lending market + SOL/USDC reserves + USDC/WSOL mints, with project patch flipping USDC mint authority to a bundled payer. Ships a runnable workflow (init user metadata → init obligation → refresh reserves via Scope → deposit 100 USDC → borrow 0.1 SOL) plus standalone tx templates. Other PDAs auto-clone on first run.",
+      "logoUrl": "https://raw.githubusercontent.com/hoangtuanictvn/reley-examples/main/logos/kamino-lend.png",
+      "zipUrl": "https://raw.githubusercontent.com/hoangtuanictvn/reley-examples/main/packages/kamino-lend-main.reley.zip",
+      "author": "hoangtuanictvn",
+      "size": 627335,
+      "sha256": "e848a5494d2b89f8b8c06f0ccde00bf323253c4557c0448adcdbfcd07f4bf1f5",
+      "programIds": ["KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD"],
+      "network": "mainnet-beta",
+      "tags": ["anchor", "lending", "money-market", "kamino"],
+      "createdAt": "2026-06-27"
+    },
+    {
+      "id": "meteora-damm-v2",
+      "categoryId": "dex",
+      "title": "Meteora DAMM v2 — SOL/USDC pool",
+      "description": "Full DAMM v2 (CP-AMM) SOL/USDC scenario: program + pool + token vaults + position + patched payer USDC/WSOL ATAs. Ships 3 workflows (swap SOL→USDC, USDC→SOL, overdraft), 5 tx templates, and 17 state patches. Hit run.",
+      "logoUrl": "https://raw.githubusercontent.com/hoangtuanictvn/reley-examples/main/logos/meteora-damm-v2.png",
+      "zipUrl": "https://raw.githubusercontent.com/hoangtuanictvn/reley-examples/main/packages/meteora-damm-v2.reley.zip",
+      "author": "hoangtuanictvn",
+      "size": 396650,
+      "sha256": "869c80c6ddf9666a5532c3c43c9eb0095a7b0d8a1a7def5132c329b33a5b049d",
+      "programIds": ["cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG"],
+      "network": "mainnet-beta",
+      "tags": ["anchor", "dex", "amm", "meteora", "damm"],
+      "createdAt": "2026-06-27"
+    },
+    {
+      "id": "circle-usdc-mint",
+      "categoryId": "stablecoin",
+      "title": "Circle USDC — mint snapshot",
+      "description": "USDC SPL Token mint with current supply + authorities. SPL Token program pre-loaded. Mint to a sandbox wallet, freeze/thaw, or test integrations without touching mainnet.",
+      "logoUrl": "https://raw.githubusercontent.com/hoangtuanictvn/reley-examples/main/logos/circle-usdc.png",
+      "zipUrl": "https://raw.githubusercontent.com/hoangtuanictvn/reley-examples/main/packages/circle-usdc-mint.reley.zip",
+      "author": "hoangtuanictvn",
+      "size": 39878,
+      "sha256": "f102374e0cc70074a2438124e6d1fd044e8bf6e9916c1ef16645423cc690f520",
+      "programIds": ["TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"],
+      "network": "mainnet-beta",
+      "tags": ["spl-token", "stablecoin", "usdc", "circle"],
+      "createdAt": "2026-06-27"
+    },
+    {
+      "id": "metaplex-token-metadata",
+      "categoryId": "nft",
+      "title": "Metaplex Token Metadata — sample mint",
+      "description": "Metaplex Token Metadata program with a sample NFT mint, master edition, and metadata account. Mint, transfer, or test royalty enforcement locally.",
+      "logoUrl": "https://raw.githubusercontent.com/hoangtuanictvn/reley-examples/main/logos/metaplex-nft.png",
+      "zipUrl": "https://raw.githubusercontent.com/hoangtuanictvn/reley-examples/main/packages/metaplex-token-metadata.reley.zip",
+      "author": "hoangtuanictvn",
+      "size": 220789,
+      "sha256": "fa690fe30f4d5c408175e0dab63483cc17e5310b12c8efd3e132db38cea3378b",
+      "programIds": ["metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s"],
+      "network": "mainnet-beta",
+      "tags": ["nft", "metaplex", "metadata"],
+      "createdAt": "2026-06-27"
+    }
+  ]
+}

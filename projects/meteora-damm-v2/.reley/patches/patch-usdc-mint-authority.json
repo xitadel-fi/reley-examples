@@ -1,0 +1,11 @@
+{
+  "id": "patch-usdc-mint-authority",
+  "target": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+  "op": {
+    "kind": "setField",
+    "fieldPath": "mintAuthority",
+    "valueJson": "\"GfXZVggN4SnqW3s8XierYjKh4QSn2cP9g7Xca5UF8vSj\""
+  },
+  "createdAt": 1782543687276,
+  "enabled": true
+}

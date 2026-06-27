@@ -1,0 +1,30 @@
+{
+  "id": "aaaaaaaa-aaaa-4000-8000-000000000300",
+  "name": "System Transfer — 0.01 SOL",
+  "description": "System SOL transfer — universal starter template. Edit the source/destination + amount to match your scenario before sending.",
+  "ixs": [
+    {
+      "programId": "11111111111111111111111111111111",
+      "programLabel": "System",
+      "instructionName": "Transfer",
+      "summary": "Transfer 0.01 SOL to 9eyXs1iD…",
+      "accounts": [
+        {
+          "pubkey": "9eyXs1iDMHs1HVbtNMyiCfwoxJyrG3KQuRttjL5cUmgT",
+          "isSigner": true,
+          "isWritable": true
+        },
+        {
+          "pubkey": "9eyXs1iDMHs1HVbtNMyiCfwoxJyrG3KQuRttjL5cUmgT",
+          "isSigner": false,
+          "isWritable": true
+        }
+      ],
+      "dataBase64": "AgAAAICWmAAAAAAA"
+    }
+  ],
+  "computeUnitLimit": null,
+  "airdropLamports": "1000000000",
+  "createdAt": 1782560000000,
+  "updatedAt": 1782560000000
+}

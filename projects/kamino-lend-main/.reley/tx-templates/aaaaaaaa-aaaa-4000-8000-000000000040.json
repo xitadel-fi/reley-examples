@@ -1,0 +1,90 @@
+{
+  "id": "aaaaaaaa-aaaa-4000-8000-000000000040",
+  "name": "Kamino — deposit USDC as collateral",
+  "description": "Single-tx Kamino USDC deposit into the main-market obligation. Caller must have already run initUserMetadata + initObligation + the refresh chain.",
+  "ixs": [
+    {
+      "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+      "programLabel": "Kamino Lend",
+      "instructionName": "depositReserveLiquidityAndObligationCollateral",
+      "summary": "Deposit + collateralize 100 USDC",
+      "accounts": [
+        {
+          "pubkey": "HQe2HY5zdhan9Z3uNMLA9sCa8k9iSPucUa11VF6GHvGn",
+          "isSigner": true,
+          "isWritable": true
+        },
+        {
+          "pubkey": "97anuZEoh1SvmiRgVX7Xn3CzvWj3ksNNMaHbx9apA9JA",
+          "isSigner": false,
+          "isWritable": true
+        },
+        {
+          "pubkey": "7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF",
+          "isSigner": false,
+          "isWritable": false
+        },
+        {
+          "pubkey": "9DrvZvyWh1HuAoZxvYWMvkf2XCzryCpGgHqrMjyDWpmo",
+          "isSigner": false,
+          "isWritable": false
+        },
+        {
+          "pubkey": "D6q6wuQSrifJKZYpR1M8R4YawnLDtDsMmWM1NbBmgJ59",
+          "isSigner": false,
+          "isWritable": true
+        },
+        {
+          "pubkey": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "isSigner": false,
+          "isWritable": false
+        },
+        {
+          "pubkey": "Bgq7trRgVMeq33yt235zM2onQ4bRDBsY5EWiTetF4qw6",
+          "isSigner": false,
+          "isWritable": true
+        },
+        {
+          "pubkey": "B8V6WVjPxW1UGwVDfxH2d2r8SyT4cqn7dQRK6XneVa7D",
+          "isSigner": false,
+          "isWritable": true
+        },
+        {
+          "pubkey": "3DzjXRfxRm6iejfyyMynR4tScddaanrePJ1NJU2XnPPL",
+          "isSigner": false,
+          "isWritable": true
+        },
+        {
+          "pubkey": "DouNz65yvaL5ZkTqTHJn56bVnUBmXQshDf6J9ErpURxA",
+          "isSigner": false,
+          "isWritable": true
+        },
+        {
+          "pubkey": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+          "isSigner": false,
+          "isWritable": false
+        },
+        {
+          "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "isSigner": false,
+          "isWritable": false
+        },
+        {
+          "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "isSigner": false,
+          "isWritable": false
+        },
+        {
+          "pubkey": "Sysvar1nstructions1111111111111111111111111",
+          "isSigner": false,
+          "isWritable": false
+        }
+      ],
+      "dataBase64": "gccEAt4nGi4A4fUFAAAAAA=="
+    }
+  ],
+  "computeUnitLimit": 600000,
+  "airdropLamports": "1000000000",
+  "createdAt": 1782560000000,
+  "updatedAt": 1782560000000
+}

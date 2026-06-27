@@ -1,0 +1,10 @@
+[
+  {
+    "id": "cccccccc-cccc-4000-8000-000000000100",
+    "label": "USDC test minter",
+    "pubkey": "8f8Hj9A4mnthbVXYxQXTMadbgYeub17pvDp5qYuKj8rj",
+    "createdAt": 1782560000000,
+    "sealed": false,
+    "secret": "3HexfFRrupPomTTZtN4oEGFKwL7z4WJHZaaGde4qU5jXqEathANyXrrRrb6LMKzbvm2xaA8qS7Dg7nujQMpDZ5m9"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "id": "patch-clear-lamports-pool",
+  "target": "GruYGjMXysREXk2UEkTAXbvRjEc3iJyLtpAD7A9yfXEK",
+  "op": {
+    "kind": "setLamports",
+    "lamports": "0"
+  },
+  "createdAt": 1782543687276,
+  "enabled": true
+}

@@ -1,0 +1,11 @@
+{
+  "id": "aaaaaaaa-aaaa-4000-8000-000000000050",
+  "target": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+  "op": {
+    "kind": "setField",
+    "fieldPath": "mintAuthority",
+    "valueJson": "\"HQe2HY5zdhan9Z3uNMLA9sCa8k9iSPucUa11VF6GHvGn\""
+  },
+  "createdAt": 1782560000000,
+  "enabled": true
+}

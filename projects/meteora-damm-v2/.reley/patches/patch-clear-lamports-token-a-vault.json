@@ -1,0 +1,10 @@
+{
+  "id": "patch-clear-lamports-token-a-vault",
+  "target": "9Wb6s15bfLH2ycbVkKth14W1tGkqrWDUV14u1UTj6De3",
+  "op": {
+    "kind": "setLamports",
+    "lamports": "0"
+  },
+  "createdAt": 1782543687276,
+  "enabled": true
+}

@@ -1,0 +1,10 @@
+{
+  "id": "patch-clear-owner-position",
+  "target": "668z91KuCvW7gA9MWkoLntsYRe9beW6o5Diy3uHWuNw",
+  "op": {
+    "kind": "setOwner",
+    "owner": "11111111111111111111111111111111"
+  },
+  "createdAt": 1782543687276,
+  "enabled": true
+}

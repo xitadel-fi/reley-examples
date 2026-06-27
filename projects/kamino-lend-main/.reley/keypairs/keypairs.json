@@ -1,0 +1,10 @@
+[
+  {
+    "id": "eeeeeeee-aaaa-4000-8000-000000000001",
+    "label": "Kamino test payer",
+    "pubkey": "HQe2HY5zdhan9Z3uNMLA9sCa8k9iSPucUa11VF6GHvGn",
+    "createdAt": 1782560000000,
+    "sealed": false,
+    "secret": "3HexfFRrupPomTTZtN4oEEcm6m9vds1mV2yC5N12btRo48s9NgB1jq6TVugFLeLNc2WLnRz6EdtkvFHZFeNeJorn"
+  }
+]

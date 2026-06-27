@@ -1,0 +1,9 @@
+{
+  "address": "3t4JZcueEzTbVP6kLxXrL3VpWx45jDer4eqysweBchNH",
+  "label": "Scope price feed (Kamino main market)",
+  "blobHash": "06e902bcaa6fa97279374a120d6e985b29fcce3286907f594f79a1415bbbfbc7",
+  "clonedAtSlot": {
+    "__bigint": "429632165"
+  },
+  "source": "cloned"
+}

@@ -1,0 +1,19 @@
+{
+  "formatVersion": 2,
+  "id": "f2611224-7a4a-4a1d-aa1e-3538258332a3",
+  "name": "Circle USDC — mint snapshot",
+  "description": "USDC SPL Token mint snapshot.",
+  "network": "mainnet-beta",
+  "rpcEndpointId": "https://api.mainnet-beta.solana.com",
+  "sessionIds": [
+    "dc7b662e-c8bb-4234-a985-7a352d644c01"
+  ],
+  "keypairRefs": [
+    "cccccccc-cccc-4000-8000-000000000100"
+  ],
+  "folders": [],
+  "autoCloneEnabled": true,
+  "createdAt": 1782560530564,
+  "lastOpenedAt": 1782753932647,
+  "pinned": false
+}

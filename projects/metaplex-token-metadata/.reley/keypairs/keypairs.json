@@ -1,0 +1,18 @@
+[
+  {
+    "id": "aaaaaaaa-1111-4000-8000-000000000001",
+    "label": "NFT mint payer",
+    "pubkey": "7wbZJYc8Fe5C5Mn1FuRBYdJpns6WCXVtZ3Yimvu4Arm7",
+    "createdAt": 1782560000000,
+    "sealed": false,
+    "secret": "3HexfFRrupPomTTZtN4oEEwgzTv7sX7NSE98svKnRevE1co91X4Y4u2vjDAW8YGNx8AHWrdxA74h4HuZzSCKVqV3"
+  },
+  {
+    "id": "aaaaaaaa-1111-4000-8000-000000000002",
+    "label": "NFT mint",
+    "pubkey": "VyH8HKwXvp5DP7oHPzUdGDzVxWA1Ca8b4SPkpbbAzW9",
+    "createdAt": 1782560000000,
+    "sealed": false,
+    "secret": "3HexfFRrupPomTTZtN4oEEwgzTv7sX7NSE98svKm7pNZP5WKSeWetNtorcZEtfUPxjj7ZP3mx1NKrCCaEJtS7Qi1"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "id": "patch-clear-owner-position-nft-mint",
+  "target": "6Y5ajrw8XJoB9mtJzfkWNESrQeNTLSMSx8c35GydcXMg",
+  "op": {
+    "kind": "setOwner",
+    "owner": "11111111111111111111111111111111"
+  },
+  "createdAt": 1782543687276,
+  "enabled": true
+}

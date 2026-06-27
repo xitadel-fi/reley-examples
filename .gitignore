@@ -1,0 +1,6 @@
+.DS_Store
+node_modules/
+*.tmp
+
+# Auto-injected on every project open by the desktop app — redundant in repo.
+projects/*/.claude/

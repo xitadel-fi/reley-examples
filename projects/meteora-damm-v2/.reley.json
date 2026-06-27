@@ -1,0 +1,22 @@
+{
+  "formatVersion": 2,
+  "id": "51cf10cf-a195-4355-aeaa-ea41858f1f2d",
+  "name": "Meteora DAMM v2",
+  "description": "Meteora Dynamic AMM v2 (CP-AMM).",
+  "network": "mainnet-beta",
+  "rpcEndpointId": "https://api.mainnet-beta.solana.com",
+  "sessionIds": [
+    "26c765b2-7a80-4bef-9c45-7faebc1d76d7"
+  ],
+  "keypairRefs": [
+    "076690a4-b208-4776-af35-55b9aca34fff",
+    "35d808db-d79b-4165-baf9-38e838f04cb7",
+    "45c8b09d-ad69-44b0-a4f0-aa0962af8f65",
+    "0e1f1013-7563-4dc2-9285-2b163991aac5"
+  ],
+  "folders": [],
+  "autoCloneEnabled": false,
+  "createdAt": 1782559740766,
+  "lastOpenedAt": 1782755770419,
+  "pinned": false
+}

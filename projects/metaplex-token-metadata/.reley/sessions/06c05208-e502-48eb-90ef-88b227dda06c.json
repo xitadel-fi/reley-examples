@@ -1,0 +1,1471 @@
+{
+  "id": "06c05208-e502-48eb-90ef-88b227dda06c",
+  "projectId": "4f2b4d36-e0f9-4282-a443-1db7d9b04fb7",
+  "name": "default",
+  "currentSlot": {
+    "__bigint": "9000"
+  },
+  "accounts": {},
+  "sessionPatches": [],
+  "txHistory": [
+    {
+      "id": "b3b5d0ae-9f50-47bc-b2d9-f79bd8c07086",
+      "signature": null,
+      "submittedAt": 1782692657941,
+      "success": true,
+      "errorMessage": null,
+      "cuConsumed": {
+        "__bigint": "150"
+      },
+      "trace": {
+        "programId": "11111111111111111111111111111111",
+        "depth": 1,
+        "instructionIndex": 0,
+        "cuConsumed": {
+          "__bigint": "0"
+        },
+        "cuRemaining": {
+          "__bigint": "0"
+        },
+        "logs": [
+          {
+            "raw": "Program 11111111111111111111111111111111 invoke [1]",
+            "level": "invoke"
+          },
+          {
+            "raw": "Program 11111111111111111111111111111111 success",
+            "level": "success"
+          }
+        ],
+        "events": [],
+        "returnData": null,
+        "children": [],
+        "error": null
+      },
+      "touchedAccounts": [],
+      "rawTxBase64": "AugyQU3knomz8tAhX5aQAREo+eId53XdMgRK0NkAz0cHfIR1XMPQhmViqRe3Xu5qQqpLi/PATNhfgr2tOgHO7QYHmzIm3nCdIShX81Qz7S0ppMx9GlEzWqsjy9tzWC/KjycPn1DnVyf6bz49GZM0Z0lp0AziHObQLTK5x+b2DSAIgAIAAQNnIo8UW3jkY1ItWEb/E8CFNM91yMI3rBmhPBW5KUAFOgdr5XvjoVw2TKUf/ierXNFwtdV8WGFrxOChrvDM5k+mAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAypyqAQ/TOXJYplK4TfTUKC/8wMulxnikjY4y8ar/MnwECAgABNAAAAABgTRYAAAAAAFIAAAAAAAAABt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKkA"
+    },
+    {
+      "id": "43e4c5cd-daad-4ee0-9363-5506cf849a64",
+      "signature": null,
+      "submittedAt": 1782692657947,
+      "success": true,
+      "errorMessage": null,
+      "cuConsumed": {
+        "__bigint": "2828"
+      },
+      "trace": {
+        "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "depth": 1,
+        "instructionIndex": 0,
+        "cuConsumed": {
+          "__bigint": "2828"
+        },
+        "cuRemaining": {
+          "__bigint": "197172"
+        },
+        "logs": [
+          {
+            "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+            "level": "invoke"
+          },
+          {
+            "raw": "Program log: Instruction: InitializeMint2",
+            "level": "log"
+          },
+          {
+            "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 2828 of 200000 compute units",
+            "level": "consumed"
+          },
+          {
+            "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "level": "success"
+          }
+        ],
+        "events": [],
+        "returnData": null,
+        "children": [],
+        "error": null
+      },
+      "touchedAccounts": [],
+      "rawTxBase64": "AfcDdImluiHLj2xV/ugjwpxSSVtNWP9N+1vSoUOymLUtSAcQxJ1jZDzg4bhQXuTho8NJgngKrYIWgNRcM2f6oweAAQABA2cijxRbeORjUi1YRv8TwIU0z3XIwjesGaE8FbkpQAU6B2vle+OhXDZMpR/+J6tc0XC11XxYYWvE4KGu8MzmT6YG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqSTFRRtWucUwl+R6Mgr9MkonfvRPyJYuHnjwQnU3now8AQIBAUMUAGcijxRbeORjUi1YRv8TwIU0z3XIwjesGaE8FbkpQAU6AWcijxRbeORjUi1YRv8TwIU0z3XIwjesGaE8FbkpQAU6AA=="
+    },
+    {
+      "id": "66b9651c-48c0-48db-8b04-ec2c25e06d34",
+      "signature": null,
+      "submittedAt": 1782692657962,
+      "success": true,
+      "errorMessage": null,
+      "cuConsumed": {
+        "__bigint": "20451"
+      },
+      "trace": {
+        "programId": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+        "depth": 1,
+        "instructionIndex": 0,
+        "cuConsumed": {
+          "__bigint": "20451"
+        },
+        "cuRemaining": {
+          "__bigint": "179549"
+        },
+        "logs": [
+          {
+            "raw": "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+            "level": "invoke"
+          },
+          {
+            "raw": "Program log: CreateIdempotent",
+            "level": "log"
+          },
+          {
+            "raw": "Program log: Initialize the associated token account",
+            "level": "log"
+          },
+          {
+            "raw": "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 20451 of 200000 compute units",
+            "level": "consumed"
+          },
+          {
+            "raw": "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+            "level": "success"
+          }
+        ],
+        "events": [],
+        "returnData": null,
+        "children": [
+          {
+            "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "depth": 2,
+            "instructionIndex": 0,
+            "cuConsumed": {
+              "__bigint": "1622"
+            },
+            "cuRemaining": {
+              "__bigint": "192973"
+            },
+            "logs": [
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+                "level": "invoke"
+              },
+              {
+                "raw": "Program log: Instruction: GetAccountDataSize",
+                "level": "log"
+              },
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 1622 of 194595 compute units",
+                "level": "consumed"
+              },
+              {
+                "raw": "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+                "level": "return"
+              },
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+                "level": "success"
+              }
+            ],
+            "events": [],
+            "returnData": {
+              "__bytes": "pQAAAAAAAAA="
+            },
+            "children": [],
+            "error": null
+          },
+          {
+            "programId": "11111111111111111111111111111111",
+            "depth": 2,
+            "instructionIndex": 1,
+            "cuConsumed": {
+              "__bigint": "0"
+            },
+            "cuRemaining": {
+              "__bigint": "0"
+            },
+            "logs": [
+              {
+                "raw": "Program 11111111111111111111111111111111 invoke [2]",
+                "level": "invoke"
+              },
+              {
+                "raw": "Program 11111111111111111111111111111111 success",
+                "level": "success"
+              }
+            ],
+            "events": [],
+            "returnData": null,
+            "children": [],
+            "error": null
+          },
+          {
+            "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "depth": 2,
+            "instructionIndex": 2,
+            "cuConsumed": {
+              "__bigint": "1405"
+            },
+            "cuRemaining": {
+              "__bigint": "186550"
+            },
+            "logs": [
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+                "level": "invoke"
+              },
+              {
+                "raw": "Program log: Instruction: InitializeImmutableOwner",
+                "level": "log"
+              },
+              {
+                "raw": "Program log: Please upgrade to SPL Token 2022 for immutable owner support",
+                "level": "log"
+              },
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 1405 of 187955 compute units",
+                "level": "consumed"
+              },
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+                "level": "success"
+              }
+            ],
+            "events": [],
+            "returnData": null,
+            "children": [],
+            "error": null
+          },
+          {
+            "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "depth": 2,
+            "instructionIndex": 3,
+            "cuConsumed": {
+              "__bigint": "4241"
+            },
+            "cuRemaining": {
+              "__bigint": "179832"
+            },
+            "logs": [
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+                "level": "invoke"
+              },
+              {
+                "raw": "Program log: Instruction: InitializeAccount3",
+                "level": "log"
+              },
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 4241 of 184073 compute units",
+                "level": "consumed"
+              },
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+                "level": "success"
+              }
+            ],
+            "events": [],
+            "returnData": null,
+            "children": [],
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      "touchedAccounts": [],
+      "rawTxBase64": "ASwIXq1hH/NPiZbd9jtyjxnvcaxMTMBnW6feoh3fmxSBOQwhu+X9hYWYfu6WR5ybBTZqilhU/3G/dgBTwHQGXgeAAQAEBmcijxRbeORjUi1YRv8TwIU0z3XIwjesGaE8FbkpQAU6wXotxmeNudiayapgp0y1vsyGvuvT4R07jUKT8nCDwvKMlyWPTiSJ8bs9ECkUjg2DC1oTmdr/EIQEjnvY2+n4WQdr5XvjoVw2TKUf/ierXNFwtdV8WGFrxOChrvDM5k+mAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqSHn2COCnCtq+gUWs6RScrC+6SpeRu/vztm+RFB1X+FNAQIGAAEAAwQFAQEA"
+    },
+    {
+      "id": "aeae1a2b-8454-44a8-9547-f5aaaa9bc29a",
+      "signature": null,
+      "submittedAt": 1782692657968,
+      "success": true,
+      "errorMessage": null,
+      "cuConsumed": {
+        "__bigint": "4537"
+      },
+      "trace": {
+        "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "depth": 1,
+        "instructionIndex": 0,
+        "cuConsumed": {
+          "__bigint": "4537"
+        },
+        "cuRemaining": {
+          "__bigint": "195463"
+        },
+        "logs": [
+          {
+            "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+            "level": "invoke"
+          },
+          {
+            "raw": "Program log: Instruction: MintTo",
+            "level": "log"
+          },
+          {
+            "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 4537 of 200000 compute units",
+            "level": "consumed"
+          },
+          {
+            "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "level": "success"
+          }
+        ],
+        "events": [],
+        "returnData": null,
+        "children": [],
+        "error": null
+      },
+      "touchedAccounts": [],
+      "rawTxBase64": "AZ2dLv4NR3l6r1WEJ4UYkvgj4y2mZQDy/5s34i3TaDOq8simaiS8Fda9T4wk1rFpSIJqDYPjWx0UuYGs8yPCQwKAAQABBGcijxRbeORjUi1YRv8TwIU0z3XIwjesGaE8FbkpQAU6B2vle+OhXDZMpR/+J6tc0XC11XxYYWvE4KGu8MzmT6bBei3GZ4252JrJqmCnTLW+zIa+69PhHTuNQpPycIPC8gbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCp6IgBHiuFSHuuKns6Xgihrm2eHgYzKCiEouiZouwDoeEBAwMBAgAJBwEAAAAAAAAAAA=="
+    },
+    {
+      "id": "3f299ea3-c72c-4e60-9bbe-0fed777fb2fd",
+      "signature": null,
+      "submittedAt": 1782692657979,
+      "success": true,
+      "errorMessage": null,
+      "cuConsumed": {
+        "__bigint": "45524"
+      },
+      "trace": {
+        "programId": "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s",
+        "depth": 1,
+        "instructionIndex": 0,
+        "cuConsumed": {
+          "__bigint": "45524"
+        },
+        "cuRemaining": {
+          "__bigint": "154476"
+        },
+        "logs": [
+          {
+            "raw": "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [1]",
+            "level": "invoke"
+          },
+          {
+            "raw": "Program log: IX: Create Metadata Accounts v3",
+            "level": "log"
+          },
+          {
+            "raw": "Program log: Allocate space for the account",
+            "level": "log"
+          },
+          {
+            "raw": "Program log: Assign the account to the owning program",
+            "level": "log"
+          },
+          {
+            "raw": "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s consumed 45524 of 200000 compute units",
+            "level": "consumed"
+          },
+          {
+            "raw": "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s success",
+            "level": "success"
+          }
+        ],
+        "events": [],
+        "returnData": null,
+        "children": [
+          {
+            "programId": "11111111111111111111111111111111",
+            "depth": 2,
+            "instructionIndex": 0,
+            "cuConsumed": {
+              "__bigint": "0"
+            },
+            "cuRemaining": {
+              "__bigint": "0"
+            },
+            "logs": [
+              {
+                "raw": "Program 11111111111111111111111111111111 invoke [2]",
+                "level": "invoke"
+              },
+              {
+                "raw": "Program 11111111111111111111111111111111 success",
+                "level": "success"
+              }
+            ],
+            "events": [],
+            "returnData": null,
+            "children": [],
+            "error": null
+          },
+          {
+            "programId": "11111111111111111111111111111111",
+            "depth": 2,
+            "instructionIndex": 1,
+            "cuConsumed": {
+              "__bigint": "0"
+            },
+            "cuRemaining": {
+              "__bigint": "0"
+            },
+            "logs": [
+              {
+                "raw": "Program 11111111111111111111111111111111 invoke [2]",
+                "level": "invoke"
+              },
+              {
+                "raw": "Program 11111111111111111111111111111111 success",
+                "level": "success"
+              }
+            ],
+            "events": [],
+            "returnData": null,
+            "children": [],
+            "error": null
+          },
+          {
+            "programId": "11111111111111111111111111111111",
+            "depth": 2,
+            "instructionIndex": 2,
+            "cuConsumed": {
+              "__bigint": "0"
+            },
+            "cuRemaining": {
+              "__bigint": "0"
+            },
+            "logs": [
+              {
+                "raw": "Program 11111111111111111111111111111111 invoke [2]",
+                "level": "invoke"
+              },
+              {
+                "raw": "Program 11111111111111111111111111111111 success",
+                "level": "success"
+              }
+            ],
+            "events": [],
+            "returnData": null,
+            "children": [],
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      "touchedAccounts": [],
+      "rawTxBase64": "Aersj7NDypCKDe8yEiMVF35cErKPLL2d1YKRpXsdbRo/WFaZOWAo43cJ8q+y4jHMJxnNp+dtp6sLLUyhvyF7jQOAAQAEBmcijxRbeORjUi1YRv8TwIU0z3XIwjesGaE8FbkpQAU6smdW4wcjqU1vMoAJSugQlnLUqVA0RK5G7oSBmd+NvsQLcGWx49F8RTidUn9rBMPNWLhscxqg/bVJttG8A/gpRgdr5XvjoVw2TKUf/ierXNFwtdV8WGFrxOChrvDM5k+mAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGp9UXGSxcUSGMyUw9SvF/WNruCJuh/UTj29mKAAAAAK9KNRqgP7p0Uap+idhjqJI3dNjbvwvre6/fto+4y8h5AQIHAQMAAAAEBXshDgAAAFJlbGV5IERlbW8gTkZUBQAAAFJFTEVZLgAAAGh0dHBzOi8vcmVsZXkueHl6L2NvbW11bml0eS9tZXRhcGxleC1kZW1vLmpzb24AAAEBAAAAZyKPFFt45GNSLVhG/xPAhTTPdcjCN6wZoTwVuSlABToBZAAAAQAA"
+    },
+    {
+      "id": "9578ec0c-23f7-4f91-8433-5d668b7bea03",
+      "signature": null,
+      "submittedAt": 1782692657985,
+      "success": false,
+      "errorMessage": "TransactionErrorInstructionError { index: 0, error: InstructionErrorCustom { code: 203 } }",
+      "cuConsumed": {
+        "__bigint": "40359"
+      },
+      "trace": {
+        "programId": "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s",
+        "depth": 1,
+        "instructionIndex": 0,
+        "cuConsumed": {
+          "__bigint": "40359"
+        },
+        "cuRemaining": {
+          "__bigint": "159641"
+        },
+        "logs": [
+          {
+            "raw": "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [1]",
+            "level": "invoke"
+          },
+          {
+            "raw": "Program log: V3 Create Master Edition",
+            "level": "log"
+          },
+          {
+            "raw": "Program log: Transfer 1030080 lamports to the new account",
+            "level": "log"
+          },
+          {
+            "raw": "Program log: Allocate space for the account",
+            "level": "log"
+          },
+          {
+            "raw": "Program log: Assign the account to the owning program",
+            "level": "log"
+          },
+          {
+            "raw": "Program log: Master edition is not mutable",
+            "level": "log"
+          },
+          {
+            "raw": "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s consumed 40359 of 200000 compute units",
+            "level": "consumed"
+          },
+          {
+            "raw": "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s failed: custom program error: 0xcb",
+            "level": "failure"
+          }
+        ],
+        "events": [],
+        "returnData": null,
+        "children": [
+          {
+            "programId": "11111111111111111111111111111111",
+            "depth": 2,
+            "instructionIndex": 0,
+            "cuConsumed": {
+              "__bigint": "0"
+            },
+            "cuRemaining": {
+              "__bigint": "0"
+            },
+            "logs": [
+              {
+                "raw": "Program 11111111111111111111111111111111 invoke [2]",
+                "level": "invoke"
+              },
+              {
+                "raw": "Program 11111111111111111111111111111111 success",
+                "level": "success"
+              }
+            ],
+            "events": [],
+            "returnData": null,
+            "children": [],
+            "error": null
+          },
+          {
+            "programId": "11111111111111111111111111111111",
+            "depth": 2,
+            "instructionIndex": 1,
+            "cuConsumed": {
+              "__bigint": "0"
+            },
+            "cuRemaining": {
+              "__bigint": "0"
+            },
+            "logs": [
+              {
+                "raw": "Program 11111111111111111111111111111111 invoke [2]",
+                "level": "invoke"
+              },
+              {
+                "raw": "Program 11111111111111111111111111111111 success",
+                "level": "success"
+              }
+            ],
+            "events": [],
+            "returnData": null,
+            "children": [],
+            "error": null
+          },
+          {
+            "programId": "11111111111111111111111111111111",
+            "depth": 2,
+            "instructionIndex": 2,
+            "cuConsumed": {
+              "__bigint": "0"
+            },
+            "cuRemaining": {
+              "__bigint": "0"
+            },
+            "logs": [
+              {
+                "raw": "Program 11111111111111111111111111111111 invoke [2]",
+                "level": "invoke"
+              },
+              {
+                "raw": "Program 11111111111111111111111111111111 success",
+                "level": "success"
+              }
+            ],
+            "events": [],
+            "returnData": null,
+            "children": [],
+            "error": null
+          }
+        ],
+        "error": "custom program error: 0xcb"
+      },
+      "touchedAccounts": [],
+      "rawTxBase64": "ATNlmjM//Qtd041kEF2TFDksxjjHT5Nnwu2W3NZkxBvcPhWNYPjlPr17LU4EXvd5etrPKsJemj8gC7W+YqS00gGAAQAFCGcijxRbeORjUi1YRv8TwIU0z3XIwjesGaE8FbkpQAU6HxJa8kx8JIy7CdyDFmhQX5vsFLbKFwcExbUalecvZeYHa+V746FcNkylH/4nq1zRcLXVfFhha8Tgoa7wzOZPpgtwZbHj0XxFOJ1Sf2sEw81YuGxzGqD9tUm20bwD+ClGsmdW4wcjqU1vMoAJSugQlnLUqVA0RK5G7oSBmd+NvsQG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABqfVFxksXFEhjMlMPUrxf1ja7gibof1E49vZigAAAAAA7MatHIDMnuzGK2GKhsWvmkKkOWVTIA4MaQ025mq19wEDCQECAAAABAUGBwoRAQAAAAAAAAAAAA=="
+    },
+    {
+      "id": "4522f82f-3d36-4b8e-91f7-fd468cb6ab58",
+      "signature": null,
+      "submittedAt": 1782693069574,
+      "success": true,
+      "errorMessage": null,
+      "cuConsumed": {
+        "__bigint": "150"
+      },
+      "trace": {
+        "programId": "11111111111111111111111111111111",
+        "depth": 1,
+        "instructionIndex": 0,
+        "cuConsumed": {
+          "__bigint": "0"
+        },
+        "cuRemaining": {
+          "__bigint": "0"
+        },
+        "logs": [
+          {
+            "raw": "Program 11111111111111111111111111111111 invoke [1]",
+            "level": "invoke"
+          },
+          {
+            "raw": "Program 11111111111111111111111111111111 success",
+            "level": "success"
+          }
+        ],
+        "events": [],
+        "returnData": null,
+        "children": [],
+        "error": null
+      },
+      "touchedAccounts": [],
+      "rawTxBase64": "AugyQU3knomz8tAhX5aQAREo+eId53XdMgRK0NkAz0cHfIR1XMPQhmViqRe3Xu5qQqpLi/PATNhfgr2tOgHO7QYHmzIm3nCdIShX81Qz7S0ppMx9GlEzWqsjy9tzWC/KjycPn1DnVyf6bz49GZM0Z0lp0AziHObQLTK5x+b2DSAIgAIAAQNnIo8UW3jkY1ItWEb/E8CFNM91yMI3rBmhPBW5KUAFOgdr5XvjoVw2TKUf/ierXNFwtdV8WGFrxOChrvDM5k+mAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAypyqAQ/TOXJYplK4TfTUKC/8wMulxnikjY4y8ar/MnwECAgABNAAAAABgTRYAAAAAAFIAAAAAAAAABt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKkA"
+    },
+    {
+      "id": "7ade1850-fa18-42e7-9bbc-1912530385aa",
+      "signature": null,
+      "submittedAt": 1782693069581,
+      "success": true,
+      "errorMessage": null,
+      "cuConsumed": {
+        "__bigint": "2828"
+      },
+      "trace": {
+        "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "depth": 1,
+        "instructionIndex": 0,
+        "cuConsumed": {
+          "__bigint": "2828"
+        },
+        "cuRemaining": {
+          "__bigint": "197172"
+        },
+        "logs": [
+          {
+            "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+            "level": "invoke"
+          },
+          {
+            "raw": "Program log: Instruction: InitializeMint2",
+            "level": "log"
+          },
+          {
+            "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 2828 of 200000 compute units",
+            "level": "consumed"
+          },
+          {
+            "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "level": "success"
+          }
+        ],
+        "events": [],
+        "returnData": null,
+        "children": [],
+        "error": null
+      },
+      "touchedAccounts": [],
+      "rawTxBase64": "AfcDdImluiHLj2xV/ugjwpxSSVtNWP9N+1vSoUOymLUtSAcQxJ1jZDzg4bhQXuTho8NJgngKrYIWgNRcM2f6oweAAQABA2cijxRbeORjUi1YRv8TwIU0z3XIwjesGaE8FbkpQAU6B2vle+OhXDZMpR/+J6tc0XC11XxYYWvE4KGu8MzmT6YG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqSTFRRtWucUwl+R6Mgr9MkonfvRPyJYuHnjwQnU3now8AQIBAUMUAGcijxRbeORjUi1YRv8TwIU0z3XIwjesGaE8FbkpQAU6AWcijxRbeORjUi1YRv8TwIU0z3XIwjesGaE8FbkpQAU6AA=="
+    },
+    {
+      "id": "5dbfcadd-f2bd-46b0-a766-6312ce6beac8",
+      "signature": null,
+      "submittedAt": 1782693069586,
+      "success": true,
+      "errorMessage": null,
+      "cuConsumed": {
+        "__bigint": "20451"
+      },
+      "trace": {
+        "programId": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+        "depth": 1,
+        "instructionIndex": 0,
+        "cuConsumed": {
+          "__bigint": "20451"
+        },
+        "cuRemaining": {
+          "__bigint": "179549"
+        },
+        "logs": [
+          {
+            "raw": "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+            "level": "invoke"
+          },
+          {
+            "raw": "Program log: CreateIdempotent",
+            "level": "log"
+          },
+          {
+            "raw": "Program log: Initialize the associated token account",
+            "level": "log"
+          },
+          {
+            "raw": "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 20451 of 200000 compute units",
+            "level": "consumed"
+          },
+          {
+            "raw": "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+            "level": "success"
+          }
+        ],
+        "events": [],
+        "returnData": null,
+        "children": [
+          {
+            "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "depth": 2,
+            "instructionIndex": 0,
+            "cuConsumed": {
+              "__bigint": "1622"
+            },
+            "cuRemaining": {
+              "__bigint": "192973"
+            },
+            "logs": [
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+                "level": "invoke"
+              },
+              {
+                "raw": "Program log: Instruction: GetAccountDataSize",
+                "level": "log"
+              },
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 1622 of 194595 compute units",
+                "level": "consumed"
+              },
+              {
+                "raw": "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+                "level": "return"
+              },
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+                "level": "success"
+              }
+            ],
+            "events": [],
+            "returnData": {
+              "__bytes": "pQAAAAAAAAA="
+            },
+            "children": [],
+            "error": null
+          },
+          {
+            "programId": "11111111111111111111111111111111",
+            "depth": 2,
+            "instructionIndex": 1,
+            "cuConsumed": {
+              "__bigint": "0"
+            },
+            "cuRemaining": {
+              "__bigint": "0"
+            },
+            "logs": [
+              {
+                "raw": "Program 11111111111111111111111111111111 invoke [2]",
+                "level": "invoke"
+              },
+              {
+                "raw": "Program 11111111111111111111111111111111 success",
+                "level": "success"
+              }
+            ],
+            "events": [],
+            "returnData": null,
+            "children": [],
+            "error": null
+          },
+          {
+            "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "depth": 2,
+            "instructionIndex": 2,
+            "cuConsumed": {
+              "__bigint": "1405"
+            },
+            "cuRemaining": {
+              "__bigint": "186550"
+            },
+            "logs": [
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+                "level": "invoke"
+              },
+              {
+                "raw": "Program log: Instruction: InitializeImmutableOwner",
+                "level": "log"
+              },
+              {
+                "raw": "Program log: Please upgrade to SPL Token 2022 for immutable owner support",
+                "level": "log"
+              },
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 1405 of 187955 compute units",
+                "level": "consumed"
+              },
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+                "level": "success"
+              }
+            ],
+            "events": [],
+            "returnData": null,
+            "children": [],
+            "error": null
+          },
+          {
+            "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "depth": 2,
+            "instructionIndex": 3,
+            "cuConsumed": {
+              "__bigint": "4241"
+            },
+            "cuRemaining": {
+              "__bigint": "179832"
+            },
+            "logs": [
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+                "level": "invoke"
+              },
+              {
+                "raw": "Program log: Instruction: InitializeAccount3",
+                "level": "log"
+              },
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 4241 of 184073 compute units",
+                "level": "consumed"
+              },
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+                "level": "success"
+              }
+            ],
+            "events": [],
+            "returnData": null,
+            "children": [],
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      "touchedAccounts": [],
+      "rawTxBase64": "ASwIXq1hH/NPiZbd9jtyjxnvcaxMTMBnW6feoh3fmxSBOQwhu+X9hYWYfu6WR5ybBTZqilhU/3G/dgBTwHQGXgeAAQAEBmcijxRbeORjUi1YRv8TwIU0z3XIwjesGaE8FbkpQAU6wXotxmeNudiayapgp0y1vsyGvuvT4R07jUKT8nCDwvKMlyWPTiSJ8bs9ECkUjg2DC1oTmdr/EIQEjnvY2+n4WQdr5XvjoVw2TKUf/ierXNFwtdV8WGFrxOChrvDM5k+mAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqSHn2COCnCtq+gUWs6RScrC+6SpeRu/vztm+RFB1X+FNAQIGAAEAAwQFAQEA"
+    },
+    {
+      "id": "949e1123-85e4-4aa4-9d26-fdbdbc95b61a",
+      "signature": null,
+      "submittedAt": 1782693069588,
+      "success": true,
+      "errorMessage": null,
+      "cuConsumed": {
+        "__bigint": "4537"
+      },
+      "trace": {
+        "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "depth": 1,
+        "instructionIndex": 0,
+        "cuConsumed": {
+          "__bigint": "4537"
+        },
+        "cuRemaining": {
+          "__bigint": "195463"
+        },
+        "logs": [
+          {
+            "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+            "level": "invoke"
+          },
+          {
+            "raw": "Program log: Instruction: MintTo",
+            "level": "log"
+          },
+          {
+            "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 4537 of 200000 compute units",
+            "level": "consumed"
+          },
+          {
+            "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "level": "success"
+          }
+        ],
+        "events": [],
+        "returnData": null,
+        "children": [],
+        "error": null
+      },
+      "touchedAccounts": [],
+      "rawTxBase64": "AZ2dLv4NR3l6r1WEJ4UYkvgj4y2mZQDy/5s34i3TaDOq8simaiS8Fda9T4wk1rFpSIJqDYPjWx0UuYGs8yPCQwKAAQABBGcijxRbeORjUi1YRv8TwIU0z3XIwjesGaE8FbkpQAU6B2vle+OhXDZMpR/+J6tc0XC11XxYYWvE4KGu8MzmT6bBei3GZ4252JrJqmCnTLW+zIa+69PhHTuNQpPycIPC8gbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCp6IgBHiuFSHuuKns6Xgihrm2eHgYzKCiEouiZouwDoeEBAwMBAgAJBwEAAAAAAAAAAA=="
+    },
+    {
+      "id": "c3162f4f-9a58-44b1-adfd-45f8a09b3379",
+      "signature": null,
+      "submittedAt": 1782693069596,
+      "success": true,
+      "errorMessage": null,
+      "cuConsumed": {
+        "__bigint": "45524"
+      },
+      "trace": {
+        "programId": "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s",
+        "depth": 1,
+        "instructionIndex": 0,
+        "cuConsumed": {
+          "__bigint": "45524"
+        },
+        "cuRemaining": {
+          "__bigint": "154476"
+        },
+        "logs": [
+          {
+            "raw": "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [1]",
+            "level": "invoke"
+          },
+          {
+            "raw": "Program log: IX: Create Metadata Accounts v3",
+            "level": "log"
+          },
+          {
+            "raw": "Program log: Allocate space for the account",
+            "level": "log"
+          },
+          {
+            "raw": "Program log: Assign the account to the owning program",
+            "level": "log"
+          },
+          {
+            "raw": "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s consumed 45524 of 200000 compute units",
+            "level": "consumed"
+          },
+          {
+            "raw": "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s success",
+            "level": "success"
+          }
+        ],
+        "events": [],
+        "returnData": null,
+        "children": [
+          {
+            "programId": "11111111111111111111111111111111",
+            "depth": 2,
+            "instructionIndex": 0,
+            "cuConsumed": {
+              "__bigint": "0"
+            },
+            "cuRemaining": {
+              "__bigint": "0"
+            },
+            "logs": [
+              {
+                "raw": "Program 11111111111111111111111111111111 invoke [2]",
+                "level": "invoke"
+              },
+              {
+                "raw": "Program 11111111111111111111111111111111 success",
+                "level": "success"
+              }
+            ],
+            "events": [],
+            "returnData": null,
+            "children": [],
+            "error": null
+          },
+          {
+            "programId": "11111111111111111111111111111111",
+            "depth": 2,
+            "instructionIndex": 1,
+            "cuConsumed": {
+              "__bigint": "0"
+            },
+            "cuRemaining": {
+              "__bigint": "0"
+            },
+            "logs": [
+              {
+                "raw": "Program 11111111111111111111111111111111 invoke [2]",
+                "level": "invoke"
+              },
+              {
+                "raw": "Program 11111111111111111111111111111111 success",
+                "level": "success"
+              }
+            ],
+            "events": [],
+            "returnData": null,
+            "children": [],
+            "error": null
+          },
+          {
+            "programId": "11111111111111111111111111111111",
+            "depth": 2,
+            "instructionIndex": 2,
+            "cuConsumed": {
+              "__bigint": "0"
+            },
+            "cuRemaining": {
+              "__bigint": "0"
+            },
+            "logs": [
+              {
+                "raw": "Program 11111111111111111111111111111111 invoke [2]",
+                "level": "invoke"
+              },
+              {
+                "raw": "Program 11111111111111111111111111111111 success",
+                "level": "success"
+              }
+            ],
+            "events": [],
+            "returnData": null,
+            "children": [],
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      "touchedAccounts": [],
+      "rawTxBase64": "Aersj7NDypCKDe8yEiMVF35cErKPLL2d1YKRpXsdbRo/WFaZOWAo43cJ8q+y4jHMJxnNp+dtp6sLLUyhvyF7jQOAAQAEBmcijxRbeORjUi1YRv8TwIU0z3XIwjesGaE8FbkpQAU6smdW4wcjqU1vMoAJSugQlnLUqVA0RK5G7oSBmd+NvsQLcGWx49F8RTidUn9rBMPNWLhscxqg/bVJttG8A/gpRgdr5XvjoVw2TKUf/ierXNFwtdV8WGFrxOChrvDM5k+mAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGp9UXGSxcUSGMyUw9SvF/WNruCJuh/UTj29mKAAAAAK9KNRqgP7p0Uap+idhjqJI3dNjbvwvre6/fto+4y8h5AQIHAQMAAAAEBXshDgAAAFJlbGV5IERlbW8gTkZUBQAAAFJFTEVZLgAAAGh0dHBzOi8vcmVsZXkueHl6L2NvbW11bml0eS9tZXRhcGxleC1kZW1vLmpzb24AAAEBAAAAZyKPFFt45GNSLVhG/xPAhTTPdcjCN6wZoTwVuSlABToBZAAAAQAA"
+    },
+    {
+      "id": "8c8bc9fb-8574-4019-aa9f-7a21be25d1e0",
+      "signature": null,
+      "submittedAt": 1782700642618,
+      "success": true,
+      "errorMessage": null,
+      "cuConsumed": {
+        "__bigint": "150"
+      },
+      "trace": {
+        "programId": "11111111111111111111111111111111",
+        "depth": 1,
+        "instructionIndex": 0,
+        "cuConsumed": {
+          "__bigint": "0"
+        },
+        "cuRemaining": {
+          "__bigint": "0"
+        },
+        "logs": [
+          {
+            "raw": "Program 11111111111111111111111111111111 invoke [1]",
+            "level": "invoke"
+          },
+          {
+            "raw": "Program 11111111111111111111111111111111 success",
+            "level": "success"
+          }
+        ],
+        "events": [],
+        "returnData": null,
+        "children": [],
+        "error": null
+      },
+      "touchedAccounts": [],
+      "rawTxBase64": "AugyQU3knomz8tAhX5aQAREo+eId53XdMgRK0NkAz0cHfIR1XMPQhmViqRe3Xu5qQqpLi/PATNhfgr2tOgHO7QYHmzIm3nCdIShX81Qz7S0ppMx9GlEzWqsjy9tzWC/KjycPn1DnVyf6bz49GZM0Z0lp0AziHObQLTK5x+b2DSAIgAIAAQNnIo8UW3jkY1ItWEb/E8CFNM91yMI3rBmhPBW5KUAFOgdr5XvjoVw2TKUf/ierXNFwtdV8WGFrxOChrvDM5k+mAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAypyqAQ/TOXJYplK4TfTUKC/8wMulxnikjY4y8ar/MnwECAgABNAAAAABgTRYAAAAAAFIAAAAAAAAABt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKkA"
+    },
+    {
+      "id": "b93f36d7-c3d4-4b10-8ba5-7e09d75d7b07",
+      "signature": null,
+      "submittedAt": 1782700642623,
+      "success": true,
+      "errorMessage": null,
+      "cuConsumed": {
+        "__bigint": "2828"
+      },
+      "trace": {
+        "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "depth": 1,
+        "instructionIndex": 0,
+        "cuConsumed": {
+          "__bigint": "2828"
+        },
+        "cuRemaining": {
+          "__bigint": "197172"
+        },
+        "logs": [
+          {
+            "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+            "level": "invoke"
+          },
+          {
+            "raw": "Program log: Instruction: InitializeMint2",
+            "level": "log"
+          },
+          {
+            "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 2828 of 200000 compute units",
+            "level": "consumed"
+          },
+          {
+            "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "level": "success"
+          }
+        ],
+        "events": [],
+        "returnData": null,
+        "children": [],
+        "error": null
+      },
+      "touchedAccounts": [],
+      "rawTxBase64": "AfcDdImluiHLj2xV/ugjwpxSSVtNWP9N+1vSoUOymLUtSAcQxJ1jZDzg4bhQXuTho8NJgngKrYIWgNRcM2f6oweAAQABA2cijxRbeORjUi1YRv8TwIU0z3XIwjesGaE8FbkpQAU6B2vle+OhXDZMpR/+J6tc0XC11XxYYWvE4KGu8MzmT6YG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqSTFRRtWucUwl+R6Mgr9MkonfvRPyJYuHnjwQnU3now8AQIBAUMUAGcijxRbeORjUi1YRv8TwIU0z3XIwjesGaE8FbkpQAU6AWcijxRbeORjUi1YRv8TwIU0z3XIwjesGaE8FbkpQAU6AA=="
+    },
+    {
+      "id": "fa55dc43-820f-4f56-9a80-edbcce5429aa",
+      "signature": null,
+      "submittedAt": 1782700642629,
+      "success": true,
+      "errorMessage": null,
+      "cuConsumed": {
+        "__bigint": "20451"
+      },
+      "trace": {
+        "programId": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+        "depth": 1,
+        "instructionIndex": 0,
+        "cuConsumed": {
+          "__bigint": "20451"
+        },
+        "cuRemaining": {
+          "__bigint": "179549"
+        },
+        "logs": [
+          {
+            "raw": "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+            "level": "invoke"
+          },
+          {
+            "raw": "Program log: CreateIdempotent",
+            "level": "log"
+          },
+          {
+            "raw": "Program log: Initialize the associated token account",
+            "level": "log"
+          },
+          {
+            "raw": "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 20451 of 200000 compute units",
+            "level": "consumed"
+          },
+          {
+            "raw": "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+            "level": "success"
+          }
+        ],
+        "events": [],
+        "returnData": null,
+        "children": [
+          {
+            "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "depth": 2,
+            "instructionIndex": 0,
+            "cuConsumed": {
+              "__bigint": "1622"
+            },
+            "cuRemaining": {
+              "__bigint": "192973"
+            },
+            "logs": [
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+                "level": "invoke"
+              },
+              {
+                "raw": "Program log: Instruction: GetAccountDataSize",
+                "level": "log"
+              },
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 1622 of 194595 compute units",
+                "level": "consumed"
+              },
+              {
+                "raw": "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+                "level": "return"
+              },
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+                "level": "success"
+              }
+            ],
+            "events": [],
+            "returnData": {
+              "__bytes": "pQAAAAAAAAA="
+            },
+            "children": [],
+            "error": null
+          },
+          {
+            "programId": "11111111111111111111111111111111",
+            "depth": 2,
+            "instructionIndex": 1,
+            "cuConsumed": {
+              "__bigint": "0"
+            },
+            "cuRemaining": {
+              "__bigint": "0"
+            },
+            "logs": [
+              {
+                "raw": "Program 11111111111111111111111111111111 invoke [2]",
+                "level": "invoke"
+              },
+              {
+                "raw": "Program 11111111111111111111111111111111 success",
+                "level": "success"
+              }
+            ],
+            "events": [],
+            "returnData": null,
+            "children": [],
+            "error": null
+          },
+          {
+            "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "depth": 2,
+            "instructionIndex": 2,
+            "cuConsumed": {
+              "__bigint": "1405"
+            },
+            "cuRemaining": {
+              "__bigint": "186550"
+            },
+            "logs": [
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+                "level": "invoke"
+              },
+              {
+                "raw": "Program log: Instruction: InitializeImmutableOwner",
+                "level": "log"
+              },
+              {
+                "raw": "Program log: Please upgrade to SPL Token 2022 for immutable owner support",
+                "level": "log"
+              },
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 1405 of 187955 compute units",
+                "level": "consumed"
+              },
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+                "level": "success"
+              }
+            ],
+            "events": [],
+            "returnData": null,
+            "children": [],
+            "error": null
+          },
+          {
+            "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "depth": 2,
+            "instructionIndex": 3,
+            "cuConsumed": {
+              "__bigint": "4241"
+            },
+            "cuRemaining": {
+              "__bigint": "179832"
+            },
+            "logs": [
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+                "level": "invoke"
+              },
+              {
+                "raw": "Program log: Instruction: InitializeAccount3",
+                "level": "log"
+              },
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 4241 of 184073 compute units",
+                "level": "consumed"
+              },
+              {
+                "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+                "level": "success"
+              }
+            ],
+            "events": [],
+            "returnData": null,
+            "children": [],
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      "touchedAccounts": [],
+      "rawTxBase64": "ASwIXq1hH/NPiZbd9jtyjxnvcaxMTMBnW6feoh3fmxSBOQwhu+X9hYWYfu6WR5ybBTZqilhU/3G/dgBTwHQGXgeAAQAEBmcijxRbeORjUi1YRv8TwIU0z3XIwjesGaE8FbkpQAU6wXotxmeNudiayapgp0y1vsyGvuvT4R07jUKT8nCDwvKMlyWPTiSJ8bs9ECkUjg2DC1oTmdr/EIQEjnvY2+n4WQdr5XvjoVw2TKUf/ierXNFwtdV8WGFrxOChrvDM5k+mAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqSHn2COCnCtq+gUWs6RScrC+6SpeRu/vztm+RFB1X+FNAQIGAAEAAwQFAQEA"
+    },
+    {
+      "id": "be7dc139-2114-4c2d-b8db-4ead4b1ec0f2",
+      "signature": null,
+      "submittedAt": 1782700642633,
+      "success": true,
+      "errorMessage": null,
+      "cuConsumed": {
+        "__bigint": "4537"
+      },
+      "trace": {
+        "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "depth": 1,
+        "instructionIndex": 0,
+        "cuConsumed": {
+          "__bigint": "4537"
+        },
+        "cuRemaining": {
+          "__bigint": "195463"
+        },
+        "logs": [
+          {
+            "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+            "level": "invoke"
+          },
+          {
+            "raw": "Program log: Instruction: MintTo",
+            "level": "log"
+          },
+          {
+            "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 4537 of 200000 compute units",
+            "level": "consumed"
+          },
+          {
+            "raw": "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "level": "success"
+          }
+        ],
+        "events": [],
+        "returnData": null,
+        "children": [],
+        "error": null
+      },
+      "touchedAccounts": [],
+      "rawTxBase64": "AZ2dLv4NR3l6r1WEJ4UYkvgj4y2mZQDy/5s34i3TaDOq8simaiS8Fda9T4wk1rFpSIJqDYPjWx0UuYGs8yPCQwKAAQABBGcijxRbeORjUi1YRv8TwIU0z3XIwjesGaE8FbkpQAU6B2vle+OhXDZMpR/+J6tc0XC11XxYYWvE4KGu8MzmT6bBei3GZ4252JrJqmCnTLW+zIa+69PhHTuNQpPycIPC8gbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCp6IgBHiuFSHuuKns6Xgihrm2eHgYzKCiEouiZouwDoeEBAwMBAgAJBwEAAAAAAAAAAA=="
+    },
+    {
+      "id": "35ee5c13-da04-410c-8e34-e0ac519e1973",
+      "signature": null,
+      "submittedAt": 1782700642641,
+      "success": true,
+      "errorMessage": null,
+      "cuConsumed": {
+        "__bigint": "45524"
+      },
+      "trace": {
+        "programId": "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s",
+        "depth": 1,
+        "instructionIndex": 0,
+        "cuConsumed": {
+          "__bigint": "45524"
+        },
+        "cuRemaining": {
+          "__bigint": "154476"
+        },
+        "logs": [
+          {
+            "raw": "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [1]",
+            "level": "invoke"
+          },
+          {
+            "raw": "Program log: IX: Create Metadata Accounts v3",
+            "level": "log"
+          },
+          {
+            "raw": "Program log: Allocate space for the account",
+            "level": "log"
+          },
+          {
+            "raw": "Program log: Assign the account to the owning program",
+            "level": "log"
+          },
+          {
+            "raw": "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s consumed 45524 of 200000 compute units",
+            "level": "consumed"
+          },
+          {
+            "raw": "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s success",
+            "level": "success"
+          }
+        ],
+        "events": [],
+        "returnData": null,
+        "children": [
+          {
+            "programId": "11111111111111111111111111111111",
+            "depth": 2,
+            "instructionIndex": 0,
+            "cuConsumed": {
+              "__bigint": "0"
+            },
+            "cuRemaining": {
+              "__bigint": "0"
+            },
+            "logs": [
+              {
+                "raw": "Program 11111111111111111111111111111111 invoke [2]",
+                "level": "invoke"
+              },
+              {
+                "raw": "Program 11111111111111111111111111111111 success",
+                "level": "success"
+              }
+            ],
+            "events": [],
+            "returnData": null,
+            "children": [],
+            "error": null
+          },
+          {
+            "programId": "11111111111111111111111111111111",
+            "depth": 2,
+            "instructionIndex": 1,
+            "cuConsumed": {
+              "__bigint": "0"
+            },
+            "cuRemaining": {
+              "__bigint": "0"
+            },
+            "logs": [
+              {
+                "raw": "Program 11111111111111111111111111111111 invoke [2]",
+                "level": "invoke"
+              },
+              {
+                "raw": "Program 11111111111111111111111111111111 success",
+                "level": "success"
+              }
+            ],
+            "events": [],
+            "returnData": null,
+            "children": [],
+            "error": null
+          },
+          {
+            "programId": "11111111111111111111111111111111",
+            "depth": 2,
+            "instructionIndex": 2,
+            "cuConsumed": {
+              "__bigint": "0"
+            },
+            "cuRemaining": {
+              "__bigint": "0"
+            },
+            "logs": [
+              {
+                "raw": "Program 11111111111111111111111111111111 invoke [2]",
+                "level": "invoke"
+              },
+              {
+                "raw": "Program 11111111111111111111111111111111 success",
+                "level": "success"
+              }
+            ],
+            "events": [],
+            "returnData": null,
+            "children": [],
+            "error": null
+          }
+        ],
+        "error": null
+      },
+      "touchedAccounts": [],
+      "rawTxBase64": "Aersj7NDypCKDe8yEiMVF35cErKPLL2d1YKRpXsdbRo/WFaZOWAo43cJ8q+y4jHMJxnNp+dtp6sLLUyhvyF7jQOAAQAEBmcijxRbeORjUi1YRv8TwIU0z3XIwjesGaE8FbkpQAU6smdW4wcjqU1vMoAJSugQlnLUqVA0RK5G7oSBmd+NvsQLcGWx49F8RTidUn9rBMPNWLhscxqg/bVJttG8A/gpRgdr5XvjoVw2TKUf/ierXNFwtdV8WGFrxOChrvDM5k+mAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGp9UXGSxcUSGMyUw9SvF/WNruCJuh/UTj29mKAAAAAK9KNRqgP7p0Uap+idhjqJI3dNjbvwvre6/fto+4y8h5AQIHAQMAAAAEBXshDgAAAFJlbGV5IERlbW8gTkZUBQAAAFJFTEVZLgAAAGh0dHBzOi8vcmVsZXkueHl6L2NvbW11bml0eS9tZXRhcGxleC1kZW1vLmpzb24AAAEBAAAAZyKPFFt45GNSLVhG/xPAhTTPdcjCN6wZoTwVuSlABToBZAAAAQAA"
+    }
+  ],
+  "snapshots": [],
+  "isDefault": false
+}

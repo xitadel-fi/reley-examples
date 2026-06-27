@@ -1,0 +1,19 @@
+{
+  "formatVersion": 2,
+  "id": "fcdd3f7f-72e2-4f76-9e1f-d24b2948376a",
+  "name": "Kamino Lend — Main Market",
+  "description": "Live snapshot of Kamino's main market: program + key reserve/oracle accounts.",
+  "network": "mainnet-beta",
+  "rpcEndpointId": "https://api.mainnet-beta.solana.com",
+  "sessionIds": [
+    "3e9eb898-48aa-47dc-804d-d9b0ca6d3deb"
+  ],
+  "keypairRefs": [
+    "eeeeeeee-aaaa-4000-8000-000000000001"
+  ],
+  "folders": [],
+  "autoCloneEnabled": true,
+  "createdAt": 1782554291623,
+  "lastOpenedAt": 1782752916445,
+  "pinned": false
+}

@@ -1,0 +1,10 @@
+{
+  "id": "patch-clear-owner-payer-wsol-account",
+  "target": "7LANG4v38bXbB2QKdFLuo5biaE6cKDQWB3JPKi7hKVGD",
+  "op": {
+    "kind": "setOwner",
+    "owner": "11111111111111111111111111111111"
+  },
+  "createdAt": 1782543687276,
+  "enabled": true
+}

@@ -1,0 +1,10 @@
+{
+  "id": "patch-clear-owner-position-nft-account",
+  "target": "EgHSpu2upiDMkNCXKRGE1qirmHmszjK9Nm8duMDjqx56",
+  "op": {
+    "kind": "setOwner",
+    "owner": "11111111111111111111111111111111"
+  },
+  "createdAt": 1782543687276,
+  "enabled": true
+}

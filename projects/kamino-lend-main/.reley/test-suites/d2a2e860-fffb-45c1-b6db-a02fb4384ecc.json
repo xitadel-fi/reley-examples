@@ -1,0 +1,1074 @@
+{
+  "id": "d2a2e860-fffb-45c1-b6db-a02fb4384ecc",
+  "name": "Kamino lend + borrow business tests",
+  "description": "Real Kamino main-market flows. Asserts obligation + ATA balances at deposit and borrow.",
+  "cases": [
+    {
+      "id": "9fe5a848-8743-41f6-8fd8-f1466555e556",
+      "name": "lend 100 USDC only",
+      "description": "Deposit 100 USDC as collateral; assert obligation exists and payer USDC ATA dropped by 100.",
+      "resetBefore": true,
+      "steps": [
+        {
+          "kind": "resetSandbox",
+          "id": "15cf5e41-c7ee-4170-9bb9-aad1b767f14f",
+          "name": "Reset sandbox"
+        },
+        {
+          "kind": "airdrop",
+          "id": "fa4defde-c388-45f1-8a91-87dcd2b19563",
+          "name": "Airdrop 5 SOL to payer",
+          "pubkey": "HQe2HY5zdhan9Z3uNMLA9sCa8k9iSPucUa11VF6GHvGn",
+          "lamports": "5000000000"
+        },
+        {
+          "kind": "tx",
+          "id": "0b33876d-4409-426d-b19a-556ac28616dd",
+          "name": "Create payer USDC ATA",
+          "ixs": [
+            {
+              "programId": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+              "programLabel": "Associated Token Account",
+              "instructionName": "CreateIdempotent",
+              "summary": "ATA(payer, USDC)",
+              "accounts": [
+                {
+                  "pubkey": "HQe2HY5zdhan9Z3uNMLA9sCa8k9iSPucUa11VF6GHvGn",
+                  "isSigner": true,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "DouNz65yvaL5ZkTqTHJn56bVnUBmXQshDf6J9ErpURxA",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "HQe2HY5zdhan9Z3uNMLA9sCa8k9iSPucUa11VF6GHvGn",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "11111111111111111111111111111111",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                  "isSigner": false,
+                  "isWritable": false
+                }
+              ],
+              "dataBase64": "AQ=="
+            }
+          ],
+          "computeUnitLimit": 600000,
+          "airdropPayerLamports": null,
+          "payerKeypairId": "eeeeeeee-aaaa-4000-8000-000000000001",
+          "additionalSignerKeypairIds": []
+        },
+        {
+          "kind": "tx",
+          "id": "0eac9deb-7f9b-4179-9084-aa709831da21",
+          "name": "Create payer WSOL ATA",
+          "ixs": [
+            {
+              "programId": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+              "programLabel": "Associated Token Account",
+              "instructionName": "CreateIdempotent",
+              "summary": "ATA(payer, WSOL)",
+              "accounts": [
+                {
+                  "pubkey": "HQe2HY5zdhan9Z3uNMLA9sCa8k9iSPucUa11VF6GHvGn",
+                  "isSigner": true,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "GrC6ovCohnvkKthZyZPNBw6ArL52kN6vTbKNqvgNtk1c",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "HQe2HY5zdhan9Z3uNMLA9sCa8k9iSPucUa11VF6GHvGn",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "So11111111111111111111111111111111111111112",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "11111111111111111111111111111111",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                  "isSigner": false,
+                  "isWritable": false
+                }
+              ],
+              "dataBase64": "AQ=="
+            }
+          ],
+          "computeUnitLimit": 600000,
+          "airdropPayerLamports": null,
+          "payerKeypairId": "eeeeeeee-aaaa-4000-8000-000000000001",
+          "additionalSignerKeypairIds": []
+        },
+        {
+          "kind": "tx",
+          "id": "4f66b208-97cb-4bfa-8848-dfa1339dd948",
+          "name": "Mint 200 USDC to payer",
+          "ixs": [
+            {
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "programLabel": "SPL Token",
+              "instructionName": "MintTo",
+              "summary": "Mint 200 USDC → payer ATA (mint auth patched)",
+              "accounts": [
+                {
+                  "pubkey": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "DouNz65yvaL5ZkTqTHJn56bVnUBmXQshDf6J9ErpURxA",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "HQe2HY5zdhan9Z3uNMLA9sCa8k9iSPucUa11VF6GHvGn",
+                  "isSigner": true,
+                  "isWritable": false
+                }
+              ],
+              "dataBase64": "BwDC6wsAAAAA"
+            }
+          ],
+          "computeUnitLimit": 600000,
+          "airdropPayerLamports": null,
+          "payerKeypairId": "eeeeeeee-aaaa-4000-8000-000000000001",
+          "additionalSignerKeypairIds": []
+        },
+        {
+          "kind": "tx",
+          "id": "ffa3e532-0316-4062-94eb-d33e91429c78",
+          "name": "Init Kamino user metadata",
+          "ixs": [
+            {
+              "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+              "programLabel": "Kamino Lend",
+              "instructionName": "initUserMetadata",
+              "summary": "Per-user metadata account (PDA[user_meta, payer]); userLookupTable=PublicKey::default",
+              "accounts": [
+                {
+                  "pubkey": "HQe2HY5zdhan9Z3uNMLA9sCa8k9iSPucUa11VF6GHvGn",
+                  "isSigner": true,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "HQe2HY5zdhan9Z3uNMLA9sCa8k9iSPucUa11VF6GHvGn",
+                  "isSigner": true,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "8m3qScxLFgrw5JrYJGwgoB3MCswonexHvBbRv491y2S2",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "SysvarRent111111111111111111111111111111111",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "11111111111111111111111111111111",
+                  "isSigner": false,
+                  "isWritable": false
+                }
+              ],
+              "dataBase64": "damwRcUXD6IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+            }
+          ],
+          "computeUnitLimit": 600000,
+          "airdropPayerLamports": null,
+          "payerKeypairId": "eeeeeeee-aaaa-4000-8000-000000000001",
+          "additionalSignerKeypairIds": []
+        },
+        {
+          "kind": "tx",
+          "id": "d29f16d9-e39d-4743-9a45-4797dd9e3e3b",
+          "name": "Init Kamino obligation",
+          "ixs": [
+            {
+              "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+              "programLabel": "Kamino Lend",
+              "instructionName": "initObligation",
+              "summary": "Vanilla obligation (tag=0, id=0)",
+              "accounts": [
+                {
+                  "pubkey": "HQe2HY5zdhan9Z3uNMLA9sCa8k9iSPucUa11VF6GHvGn",
+                  "isSigner": true,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "HQe2HY5zdhan9Z3uNMLA9sCa8k9iSPucUa11VF6GHvGn",
+                  "isSigner": true,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "97anuZEoh1SvmiRgVX7Xn3CzvWj3ksNNMaHbx9apA9JA",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "11111111111111111111111111111111",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "11111111111111111111111111111111",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "8m3qScxLFgrw5JrYJGwgoB3MCswonexHvBbRv491y2S2",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "SysvarRent111111111111111111111111111111111",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "11111111111111111111111111111111",
+                  "isSigner": false,
+                  "isWritable": false
+                }
+              ],
+              "dataBase64": "+wrnTBsLn2AAAA=="
+            }
+          ],
+          "computeUnitLimit": 600000,
+          "airdropPayerLamports": null,
+          "payerKeypairId": "eeeeeeee-aaaa-4000-8000-000000000001",
+          "additionalSignerKeypairIds": []
+        },
+        {
+          "kind": "tx",
+          "id": "bb127c03-b80f-4ab0-ad95-c9e070d78404",
+          "name": "Deposit 100 USDC (collateralize)",
+          "ixs": [
+            {
+              "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+              "programLabel": "Kamino Lend",
+              "instructionName": "refreshReserve",
+              "summary": "Refresh reserve D6q6wuQS… via scope",
+              "accounts": [
+                {
+                  "pubkey": "D6q6wuQSrifJKZYpR1M8R4YawnLDtDsMmWM1NbBmgJ59",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "3t4JZcueEzTbVP6kLxXrL3VpWx45jDer4eqysweBchNH",
+                  "isSigner": false,
+                  "isWritable": false
+                }
+              ],
+              "dataBase64": "AtqK60/JGWY="
+            },
+            {
+              "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+              "programLabel": "Kamino Lend",
+              "instructionName": "refreshObligation",
+              "summary": "Refresh obligation against fresh reserves",
+              "accounts": [
+                {
+                  "pubkey": "7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "97anuZEoh1SvmiRgVX7Xn3CzvWj3ksNNMaHbx9apA9JA",
+                  "isSigner": false,
+                  "isWritable": true
+                }
+              ],
+              "dataBase64": "IYST5JfASFk="
+            },
+            {
+              "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+              "programLabel": "Kamino Lend",
+              "instructionName": "depositReserveLiquidityAndObligationCollateral",
+              "summary": "Deposit + collateralize 100 USDC",
+              "accounts": [
+                {
+                  "pubkey": "HQe2HY5zdhan9Z3uNMLA9sCa8k9iSPucUa11VF6GHvGn",
+                  "isSigner": true,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "97anuZEoh1SvmiRgVX7Xn3CzvWj3ksNNMaHbx9apA9JA",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "9DrvZvyWh1HuAoZxvYWMvkf2XCzryCpGgHqrMjyDWpmo",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "D6q6wuQSrifJKZYpR1M8R4YawnLDtDsMmWM1NbBmgJ59",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "Bgq7trRgVMeq33yt235zM2onQ4bRDBsY5EWiTetF4qw6",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "B8V6WVjPxW1UGwVDfxH2d2r8SyT4cqn7dQRK6XneVa7D",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "3DzjXRfxRm6iejfyyMynR4tScddaanrePJ1NJU2XnPPL",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "DouNz65yvaL5ZkTqTHJn56bVnUBmXQshDf6J9ErpURxA",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "Sysvar1nstructions1111111111111111111111111",
+                  "isSigner": false,
+                  "isWritable": false
+                }
+              ],
+              "dataBase64": "gccEAt4nGi4A4fUFAAAAAA=="
+            }
+          ],
+          "computeUnitLimit": 1400000,
+          "airdropPayerLamports": null,
+          "payerKeypairId": "eeeeeeee-aaaa-4000-8000-000000000001",
+          "additionalSignerKeypairIds": [],
+          "txExpectations": [
+            {
+              "kind": "shouldSucceed",
+              "value": true
+            },
+            {
+              "kind": "logContains",
+              "substring": "DepositReserveLiquidityAndObligationCollateral"
+            }
+          ],
+          "accountExpectations": [
+            {
+              "kind": "accountExists",
+              "address": "97anuZEoh1SvmiRgVX7Xn3CzvWj3ksNNMaHbx9apA9JA",
+              "exists": true
+            },
+            {
+              "kind": "tokenBalance",
+              "ata": "DouNz65yvaL5ZkTqTHJn56bVnUBmXQshDf6J9ErpURxA",
+              "op": "eq",
+              "value": "100000000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a321e76c-283d-416d-a035-9a4969ee17e0",
+      "name": "lend 100 USDC + borrow 0.1 SOL",
+      "description": "Full deposit + borrow; assert payer WSOL ATA received SOL.",
+      "resetBefore": true,
+      "steps": [
+        {
+          "kind": "resetSandbox",
+          "id": "9a3b6321-5994-4e70-9a66-bab75688fa72",
+          "name": "Reset sandbox"
+        },
+        {
+          "kind": "airdrop",
+          "id": "4964b0ef-7194-43d3-a06b-9320e28a9d24",
+          "name": "Airdrop 5 SOL to payer",
+          "pubkey": "HQe2HY5zdhan9Z3uNMLA9sCa8k9iSPucUa11VF6GHvGn",
+          "lamports": "5000000000"
+        },
+        {
+          "kind": "tx",
+          "id": "47cb5291-530a-441d-9ddd-b7ea9b19331a",
+          "name": "Create payer USDC ATA",
+          "ixs": [
+            {
+              "programId": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+              "programLabel": "Associated Token Account",
+              "instructionName": "CreateIdempotent",
+              "summary": "ATA(payer, USDC)",
+              "accounts": [
+                {
+                  "pubkey": "HQe2HY5zdhan9Z3uNMLA9sCa8k9iSPucUa11VF6GHvGn",
+                  "isSigner": true,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "DouNz65yvaL5ZkTqTHJn56bVnUBmXQshDf6J9ErpURxA",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "HQe2HY5zdhan9Z3uNMLA9sCa8k9iSPucUa11VF6GHvGn",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "11111111111111111111111111111111",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                  "isSigner": false,
+                  "isWritable": false
+                }
+              ],
+              "dataBase64": "AQ=="
+            }
+          ],
+          "computeUnitLimit": 600000,
+          "airdropPayerLamports": null,
+          "payerKeypairId": "eeeeeeee-aaaa-4000-8000-000000000001",
+          "additionalSignerKeypairIds": []
+        },
+        {
+          "kind": "tx",
+          "id": "87894f75-d923-43b8-9fa4-466252de34a3",
+          "name": "Create payer WSOL ATA",
+          "ixs": [
+            {
+              "programId": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+              "programLabel": "Associated Token Account",
+              "instructionName": "CreateIdempotent",
+              "summary": "ATA(payer, WSOL)",
+              "accounts": [
+                {
+                  "pubkey": "HQe2HY5zdhan9Z3uNMLA9sCa8k9iSPucUa11VF6GHvGn",
+                  "isSigner": true,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "GrC6ovCohnvkKthZyZPNBw6ArL52kN6vTbKNqvgNtk1c",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "HQe2HY5zdhan9Z3uNMLA9sCa8k9iSPucUa11VF6GHvGn",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "So11111111111111111111111111111111111111112",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "11111111111111111111111111111111",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                  "isSigner": false,
+                  "isWritable": false
+                }
+              ],
+              "dataBase64": "AQ=="
+            }
+          ],
+          "computeUnitLimit": 600000,
+          "airdropPayerLamports": null,
+          "payerKeypairId": "eeeeeeee-aaaa-4000-8000-000000000001",
+          "additionalSignerKeypairIds": []
+        },
+        {
+          "kind": "tx",
+          "id": "7e1fe41c-a4bf-4555-896f-9da6726fbd28",
+          "name": "Mint 200 USDC to payer",
+          "ixs": [
+            {
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "programLabel": "SPL Token",
+              "instructionName": "MintTo",
+              "summary": "Mint 200 USDC → payer ATA (mint auth patched)",
+              "accounts": [
+                {
+                  "pubkey": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "DouNz65yvaL5ZkTqTHJn56bVnUBmXQshDf6J9ErpURxA",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "HQe2HY5zdhan9Z3uNMLA9sCa8k9iSPucUa11VF6GHvGn",
+                  "isSigner": true,
+                  "isWritable": false
+                }
+              ],
+              "dataBase64": "BwDC6wsAAAAA"
+            }
+          ],
+          "computeUnitLimit": 600000,
+          "airdropPayerLamports": null,
+          "payerKeypairId": "eeeeeeee-aaaa-4000-8000-000000000001",
+          "additionalSignerKeypairIds": []
+        },
+        {
+          "kind": "tx",
+          "id": "2d75aca7-2535-456a-8264-5e3ab18cb93c",
+          "name": "Init Kamino user metadata",
+          "ixs": [
+            {
+              "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+              "programLabel": "Kamino Lend",
+              "instructionName": "initUserMetadata",
+              "summary": "Per-user metadata account (PDA[user_meta, payer]); userLookupTable=PublicKey::default",
+              "accounts": [
+                {
+                  "pubkey": "HQe2HY5zdhan9Z3uNMLA9sCa8k9iSPucUa11VF6GHvGn",
+                  "isSigner": true,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "HQe2HY5zdhan9Z3uNMLA9sCa8k9iSPucUa11VF6GHvGn",
+                  "isSigner": true,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "8m3qScxLFgrw5JrYJGwgoB3MCswonexHvBbRv491y2S2",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "SysvarRent111111111111111111111111111111111",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "11111111111111111111111111111111",
+                  "isSigner": false,
+                  "isWritable": false
+                }
+              ],
+              "dataBase64": "damwRcUXD6IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+            }
+          ],
+          "computeUnitLimit": 600000,
+          "airdropPayerLamports": null,
+          "payerKeypairId": "eeeeeeee-aaaa-4000-8000-000000000001",
+          "additionalSignerKeypairIds": []
+        },
+        {
+          "kind": "tx",
+          "id": "2a657617-96eb-44f0-a6fc-f58f198f6664",
+          "name": "Init Kamino obligation",
+          "ixs": [
+            {
+              "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+              "programLabel": "Kamino Lend",
+              "instructionName": "initObligation",
+              "summary": "Vanilla obligation (tag=0, id=0)",
+              "accounts": [
+                {
+                  "pubkey": "HQe2HY5zdhan9Z3uNMLA9sCa8k9iSPucUa11VF6GHvGn",
+                  "isSigner": true,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "HQe2HY5zdhan9Z3uNMLA9sCa8k9iSPucUa11VF6GHvGn",
+                  "isSigner": true,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "97anuZEoh1SvmiRgVX7Xn3CzvWj3ksNNMaHbx9apA9JA",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "11111111111111111111111111111111",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "11111111111111111111111111111111",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "8m3qScxLFgrw5JrYJGwgoB3MCswonexHvBbRv491y2S2",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "SysvarRent111111111111111111111111111111111",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "11111111111111111111111111111111",
+                  "isSigner": false,
+                  "isWritable": false
+                }
+              ],
+              "dataBase64": "+wrnTBsLn2AAAA=="
+            }
+          ],
+          "computeUnitLimit": 600000,
+          "airdropPayerLamports": null,
+          "payerKeypairId": "eeeeeeee-aaaa-4000-8000-000000000001",
+          "additionalSignerKeypairIds": []
+        },
+        {
+          "kind": "tx",
+          "id": "5d0e91df-710c-426b-8398-0fed844cddd1",
+          "name": "Deposit 100 USDC (collateralize)",
+          "ixs": [
+            {
+              "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+              "programLabel": "Kamino Lend",
+              "instructionName": "refreshReserve",
+              "summary": "Refresh reserve D6q6wuQS… via scope",
+              "accounts": [
+                {
+                  "pubkey": "D6q6wuQSrifJKZYpR1M8R4YawnLDtDsMmWM1NbBmgJ59",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "3t4JZcueEzTbVP6kLxXrL3VpWx45jDer4eqysweBchNH",
+                  "isSigner": false,
+                  "isWritable": false
+                }
+              ],
+              "dataBase64": "AtqK60/JGWY="
+            },
+            {
+              "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+              "programLabel": "Kamino Lend",
+              "instructionName": "refreshObligation",
+              "summary": "Refresh obligation against fresh reserves",
+              "accounts": [
+                {
+                  "pubkey": "7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "97anuZEoh1SvmiRgVX7Xn3CzvWj3ksNNMaHbx9apA9JA",
+                  "isSigner": false,
+                  "isWritable": true
+                }
+              ],
+              "dataBase64": "IYST5JfASFk="
+            },
+            {
+              "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+              "programLabel": "Kamino Lend",
+              "instructionName": "depositReserveLiquidityAndObligationCollateral",
+              "summary": "Deposit + collateralize 100 USDC",
+              "accounts": [
+                {
+                  "pubkey": "HQe2HY5zdhan9Z3uNMLA9sCa8k9iSPucUa11VF6GHvGn",
+                  "isSigner": true,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "97anuZEoh1SvmiRgVX7Xn3CzvWj3ksNNMaHbx9apA9JA",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "9DrvZvyWh1HuAoZxvYWMvkf2XCzryCpGgHqrMjyDWpmo",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "D6q6wuQSrifJKZYpR1M8R4YawnLDtDsMmWM1NbBmgJ59",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "Bgq7trRgVMeq33yt235zM2onQ4bRDBsY5EWiTetF4qw6",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "B8V6WVjPxW1UGwVDfxH2d2r8SyT4cqn7dQRK6XneVa7D",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "3DzjXRfxRm6iejfyyMynR4tScddaanrePJ1NJU2XnPPL",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "DouNz65yvaL5ZkTqTHJn56bVnUBmXQshDf6J9ErpURxA",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "Sysvar1nstructions1111111111111111111111111",
+                  "isSigner": false,
+                  "isWritable": false
+                }
+              ],
+              "dataBase64": "gccEAt4nGi4A4fUFAAAAAA=="
+            }
+          ],
+          "computeUnitLimit": 1400000,
+          "airdropPayerLamports": null,
+          "payerKeypairId": "eeeeeeee-aaaa-4000-8000-000000000001",
+          "additionalSignerKeypairIds": []
+        },
+        {
+          "kind": "tx",
+          "id": "4a7402c7-56a0-49a6-ab81-cf6d3c7b881a",
+          "name": "Borrow 0.1 SOL",
+          "ixs": [
+            {
+              "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+              "programLabel": "Kamino Lend",
+              "instructionName": "refreshReserve",
+              "summary": "Refresh reserve D6q6wuQS… via scope",
+              "accounts": [
+                {
+                  "pubkey": "D6q6wuQSrifJKZYpR1M8R4YawnLDtDsMmWM1NbBmgJ59",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "3t4JZcueEzTbVP6kLxXrL3VpWx45jDer4eqysweBchNH",
+                  "isSigner": false,
+                  "isWritable": false
+                }
+              ],
+              "dataBase64": "AtqK60/JGWY="
+            },
+            {
+              "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+              "programLabel": "Kamino Lend",
+              "instructionName": "refreshReserve",
+              "summary": "Refresh reserve d4A2prbA… via scope",
+              "accounts": [
+                {
+                  "pubkey": "d4A2prbA2whesmvHaL88BH6Ewn5N4bTSU2Ze8P6Bc4Q",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "3t4JZcueEzTbVP6kLxXrL3VpWx45jDer4eqysweBchNH",
+                  "isSigner": false,
+                  "isWritable": false
+                }
+              ],
+              "dataBase64": "AtqK60/JGWY="
+            },
+            {
+              "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+              "programLabel": "Kamino Lend",
+              "instructionName": "refreshObligation",
+              "summary": "Refresh obligation against fresh reserves",
+              "accounts": [
+                {
+                  "pubkey": "7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "97anuZEoh1SvmiRgVX7Xn3CzvWj3ksNNMaHbx9apA9JA",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "D6q6wuQSrifJKZYpR1M8R4YawnLDtDsMmWM1NbBmgJ59",
+                  "isSigner": false,
+                  "isWritable": false
+                }
+              ],
+              "dataBase64": "IYST5JfASFk="
+            },
+            {
+              "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+              "programLabel": "Kamino Lend",
+              "instructionName": "borrowObligationLiquidity",
+              "summary": "Borrow 0.1 SOL",
+              "accounts": [
+                {
+                  "pubkey": "HQe2HY5zdhan9Z3uNMLA9sCa8k9iSPucUa11VF6GHvGn",
+                  "isSigner": true,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "97anuZEoh1SvmiRgVX7Xn3CzvWj3ksNNMaHbx9apA9JA",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "9DrvZvyWh1HuAoZxvYWMvkf2XCzryCpGgHqrMjyDWpmo",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "d4A2prbA2whesmvHaL88BH6Ewn5N4bTSU2Ze8P6Bc4Q",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "So11111111111111111111111111111111111111112",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "GafNuUXj9rxGLn4y79dPu6MHSuPWeJR6UtTWuexpGh3U",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "3JNof8s453bwG5UqiXBLJc77NRQXezYYEBbk3fqnoKph",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "GrC6ovCohnvkKthZyZPNBw6ArL52kN6vTbKNqvgNtk1c",
+                  "isSigner": false,
+                  "isWritable": true
+                },
+                {
+                  "pubkey": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                  "isSigner": false,
+                  "isWritable": false
+                },
+                {
+                  "pubkey": "Sysvar1nstructions1111111111111111111111111",
+                  "isSigner": false,
+                  "isWritable": false
+                }
+              ],
+              "dataBase64": "eX8SzEn14UEA4fUFAAAAAA=="
+            }
+          ],
+          "computeUnitLimit": 1400000,
+          "airdropPayerLamports": null,
+          "payerKeypairId": "eeeeeeee-aaaa-4000-8000-000000000001",
+          "additionalSignerKeypairIds": [],
+          "txExpectations": [
+            {
+              "kind": "shouldSucceed",
+              "value": true
+            },
+            {
+              "kind": "logContains",
+              "substring": "BorrowObligationLiquidity"
+            }
+          ],
+          "accountExpectations": [
+            {
+              "kind": "tokenBalance",
+              "ata": "GrC6ovCohnvkKthZyZPNBw6ArL52kN6vTbKNqvgNtk1c",
+              "op": "gt",
+              "value": "0"
+            },
+            {
+              "kind": "tokenBalance",
+              "ata": "DouNz65yvaL5ZkTqTHJn56bVnUBmXQshDf6J9ErpURxA",
+              "op": "eq",
+              "value": "100000000"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "createdAt": 1782560000000,
+  "updatedAt": 1782560000000
+}

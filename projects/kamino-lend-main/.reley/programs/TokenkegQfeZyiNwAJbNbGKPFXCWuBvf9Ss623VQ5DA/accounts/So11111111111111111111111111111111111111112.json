@@ -1,0 +1,9 @@
+{
+  "address": "So11111111111111111111111111111111111111112",
+  "label": "WSOL mint",
+  "blobHash": "b0f919425a529f4971ef8dabd535aec34947d5c8c4885df80dae91635b98c5f3",
+  "clonedAtSlot": {
+    "__bigint": "429632169"
+  },
+  "source": "cloned"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "patch-sol-reserve-total-available",
+  "target": "d4A2prbA2whesmvHaL88BH6Ewn5N4bTSU2Ze8P6Bc4Q",
+  "op": {
+    "kind": "setField",
+    "fieldPath": "liquidity.totalAvailableAmount",
+    "valueJson": "390310697386549"
+  },
+  "createdAt": 1782560000000,
+  "enabled": true
+}
